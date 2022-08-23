@@ -1,7 +1,34 @@
 .promo__wrapper {
-  background-image: linear-gradient(#68B738D9 302px, @white 302px 178px);
+  position: relative;
   color: @white;
   text-align: center;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    text-align: start;
+    padding-bottom: 526px;
+    padding-left: 120px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
+    width: 530px;
+    padding-left: 190px;
+  }
+}
+
+.promo__header {
+  box-shadow: inset 0 302px @green-3;
+  background: url("../img/cat.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+
+  @media (min-width: @tablet-width) {
+    background: none;
+    box-shadow: none;
+    color: @black;
+  }
 }
 
 .promo__slogan {
@@ -9,20 +36,49 @@
   line-height: 36px;
   padding-top: 27px;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 62px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 114px;
+  }
 }
 
 .promo__intro {
   font-size: 14px;
   line-height: 14px;
   margin-top: 25px;
-  margin-bottom: 29px;
+  margin-bottom: 138px;
+  padding-bottom: 164px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 41px;
+    margin-bottom: 49px;
+    padding: 0;
+  }
+}
+
+.promo__image {
+  position: absolute;
+  top: 167px;
+
+  @media (min-width: @tablet-width) {
+    top: 263px;
+    left: 29px;
+    z-index: -1;
+  }
 }
 
 .promo__button {
   display: inline-block;
   width: 192px;
-  height: 26px;
   font-size: 14px;
   line-height: 26px;
   background-color: @green;
@@ -30,8 +86,11 @@
   text-decoration: none;
   padding: 7px 44px;
   text-transform: uppercase;
-  text-align: center;
-  margin-top: 3px;
+
+  @media (min-width: @tablet-width) {
+    width: 192px;
+    padding: 14px 26px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
-
-

@@ -1,18 +1,25 @@
 .gift {
-  margin: 0 20px 35px;
+  width: 280px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  border-top: 1px solid @special-grey;
+  margin: 0 auto;
 }
 
 .gift__text {
   position: relative;
-  font-family: 'Arial';
+  font-family: @arial;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   color: @white;
-  box-shadow: inset 0 0 0 140px  #68B738D9;
+  box-shadow: inset 0 0 0 140px @green-3;
   background: url("../img/gift/gift-cat.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
   margin: 0;
   padding: 187px 61px 43px 58px;
+
   &::before {
     content: url("../img/gift/gift-gift.svg");
     position: absolute;

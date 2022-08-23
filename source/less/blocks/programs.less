@@ -1,11 +1,62 @@
 .programs__list {
+  display: flex;
+  flex-direction: column;
   list-style-type: none;
-  padding-left: 20px;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    width: 1220px;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
 }
 
 .programs__item {
   background-color: @gray;
   position: relative;
+  width: 280px;
+  margin: 0 auto;
+
+  &--slim {
+    margin-bottom: 20px;
+  }
+
+  &--slim::before {
+    position: absolute;
+    content: url("../img/programs/programs-slim.svg");
+    left: 22px;
+    top: 21px;
+
+    @media (min-width: @tablet-width) {
+      left: 446px;
+    }
+  }
+
+  &--pro::before {
+    position: absolute;
+    content: url("../img/programs/programs-pro.svg");
+    left: 13px;
+    top: 24px;
+
+    @media (min-width: @tablet-width) {
+      left: 446px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+
+    &--slim {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+    margin: 0;
+  }
 }
 
 .programs__title {
@@ -13,35 +64,46 @@
   line-height: 37px;
   font-weight: 400;
   text-transform: uppercase;
-  margin-top: 50px;
-  margin-bottom: 29px;
-  margin-left: 91px;
+  margin: 0;
+  padding-left: 91px;
   padding-top: 30px;
-  &--slim::before {
-    position: absolute;
-    content: url("../img/programs/programs-slim.svg");
-    left: 22px;
-    top: 21px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 53px;
+    padding-top: 77px;
+    margin: 0;
   }
-  &--pro::before {
-    position: absolute;
-    content: url("../img/programs/programs-pro.svg");
-    left: 13px;
-    top: 24px;
+
+  @media (min-width: @desktop-width) {
+    padding-left: 214px;
   }
 }
 
 .programs__description {
   color: @dark-grey;
-  font-family: "Arial";
+  font-family: @arial;
   font-size: 14px;
   line-height: 18px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 0;
-  margin-bottom: 0;
   padding-bottom: 23px;
-  border-bottom: 1px solid #D9D9D9;
+  margin: 29px 33px 0 20px;
+  border-bottom: 1px solid @special-grey-4;
+
+  @media (min-width: @tablet-width) {
+    width: 340px;
+    font-size: 16px;
+    line-height: 24px;
+    color: @black;
+    border: none;
+    padding: 0;
+    margin: 24px 316px 27px 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 467px;
+    margin: 73px 51px 0 52px;
+  }
 }
 
 .programs__button {
@@ -51,12 +113,20 @@
   text-transform: uppercase;
   text-decoration: none;
   color: @black;
-  height: 24px;
-  margin-top: 15px;
-  margin-bottom: 18px;
-  margin-left: 19px;
+  padding: 15px 129px 18px 19px;
+
   &::after {
     content: url("../img/programs/programs-arrow.svg");
     margin-left: 15px;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 25px 491px 53px 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 27px 350px 55px 52px;
   }
 }
