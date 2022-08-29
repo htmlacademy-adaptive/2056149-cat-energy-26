@@ -1,9 +1,15 @@
 .gift {
-  width: 280px;
-  padding-top: 35px;
-  padding-bottom: 35px;
-  border-top: 1px solid @special-grey;
-  margin: 0 auto;
+  padding: 35px 0;
+  margin: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 69px 30px 76px;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
 }
 
 .gift__text {
@@ -13,7 +19,7 @@
   line-height: 20px;
   text-align: center;
   color: @white;
-  box-shadow: inset 0 0 0 140px @green-3;
+  box-shadow: inset 0 290px @green-3;
   background: url("../img/gift/gift-cat.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -25,5 +31,19 @@
     position: absolute;
     top: 59px;
     left: 101px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 71px 124px 69px 422px;
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 185px 43px 42px 41px;
+    text-align: center;
+
+    &::before {
+      left: 84px;
+    }
   }
 }

@@ -1,32 +1,63 @@
-.programs__list {
-  display: flex;
-  flex-direction: column;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+.programs__wrapper {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
 
   @media (min-width: @desktop-width) {
+    width: 1440px;
+  }
+}
+
+.programs__list {
+  list-style-type: none;
+  padding: 0 20px;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
     flex-direction: row;
-    width: 1220px;
     justify-content: space-between;
-    margin: 0 auto;
+    padding: 82px 110px 0;
   }
 }
 
 .programs__item {
-  background-color: @gray;
   position: relative;
-  width: 280px;
-  margin: 0 auto;
+  background-color: @gray;
 
   &--slim {
     margin-bottom: 20px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 30px;
+    }
   }
 
-  &--slim::before {
+  &::before {
+    content: "";
     position: absolute;
-    content: url("../img/programs/programs-slim.svg");
+    width: 50px;
+    height: 50px;
+    background-color: @green-4;
+    border-radius: 50%;
     left: 22px;
+    top: 24px;
+  }
+
+  &::after {
+    position: absolute;
+  }
+
+  &--slim::after {
+    content: url("../img/programs/programs-slim.svg");
+    left: 29px;
     top: 21px;
 
     @media (min-width: @tablet-width) {
@@ -34,11 +65,10 @@
     }
   }
 
-  &--pro::before {
-    position: absolute;
+  &--pro::after {
     content: url("../img/programs/programs-pro.svg");
     left: 13px;
-    top: 24px;
+    top: 35px;
 
     @media (min-width: @tablet-width) {
       left: 446px;
@@ -47,10 +77,6 @@
 
   @media (min-width: @tablet-width) {
     width: 708px;
-
-    &--slim {
-      margin-bottom: 30px;
-    }
   }
 
   @media (min-width: @desktop-width) {
@@ -86,8 +112,9 @@
   font-family: @arial;
   font-size: 14px;
   line-height: 18px;
-  padding-bottom: 23px;
-  margin: 29px 33px 0 20px;
+  padding: 0 33px 23px 20px;
+  margin: 0;
+  margin-top: 29px;
   border-bottom: 1px solid @special-grey-4;
 
   @media (min-width: @tablet-width) {
@@ -97,12 +124,12 @@
     color: @black;
     border: none;
     padding: 0;
-    margin: 24px 316px 27px 52px;
+    margin: 24px 316px 52px 52px;
   }
 
   @media (min-width: @desktop-width) {
     width: 467px;
-    margin: 73px 51px 0 52px;
+    margin: 73px 51px 27px 52px;
   }
 }
 
@@ -113,7 +140,7 @@
   text-transform: uppercase;
   text-decoration: none;
   color: @black;
-  padding: 15px 129px 18px 19px;
+  padding: 15px 0 18px 19px;
 
   &::after {
     content: url("../img/programs/programs-arrow.svg");
@@ -123,10 +150,10 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    padding: 25px 491px 53px 52px;
+    padding: 0 0 57px 52px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 27px 350px 55px 52px;
+    padding: 0 0 59px 52px;
   }
 }

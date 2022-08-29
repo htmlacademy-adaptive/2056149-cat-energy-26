@@ -10,7 +10,6 @@
 
   @media (min-width: @desktop-width) {
     min-width: 478px;
-    padding: 69px 110px 585px 132px;
   }
 }
 
@@ -20,30 +19,24 @@
   text-transform: uppercase;
   list-style: none;
   text-align: center;
-  border-top: 1px solid @special-white-2;
+  border-bottom: 1px solid @special-white-2;
   padding: 22px 0 24px;
 
   @media (min-width: @tablet-width) {
     border: none;
     padding: 0;
-  }
-}
-
-.site-list__item-text {
-  display: inline-block;
-  text-decoration: none;
-  color: @black;
-
-  @media (min-width: @tablet-width) {
     font-weight: 400;
-    font-size: 18px;
     line-height: 24px;
+    font-size: 18px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 20px;
     line-height: 30px;
-    color: @white;
   }
 }
 
+.site-list__item-link {
+  text-decoration: none;
+  color: @black;
+}

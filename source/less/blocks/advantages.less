@@ -9,14 +9,15 @@
 }
 
 .advantages__wrapper {
+  width: 320px;
+  margin: 0 auto;
+
   @media (min-width: @tablet-width) {
-    width: 708px;
-    margin: 45px auto 0;
+    width: 768px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1220px;
-    margin-top: 71px;
+    width: 1440px;
   }
 }
 
@@ -24,37 +25,39 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
-  margin-top: 20px;
-  margin-bottom: 40px;
-  text-align: center;
-  padding-right: 54px;
+  margin: 0 0 40px 21px;
+  padding-top: 20px;
+  text-align: left;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin: 0;
-    margin-bottom: 72px;
-    padding:0;
-    text-align: left;
+    margin: 0 0 72px 30px;
+    padding-top: 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 71px;
+    margin-left: 110px;
   }
 }
 
 .advantages__list {
   list-style-type: none;
   padding: 0;
+  padding-bottom: 29px;
   margin: 0;
-  margin-bottom: 29px;
 
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 0;
     padding-bottom: 104px;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-between;
+    padding: 0 100px 0;
   }
 }
 
@@ -123,7 +126,6 @@
     &--alarm::after {
       content: "4";
     }
-
   }
 }
 
@@ -142,5 +144,4 @@
     font-size: 16px;
     line-height: 24px;
   }
-
 }

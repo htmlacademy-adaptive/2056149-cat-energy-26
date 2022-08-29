@@ -1,39 +1,16 @@
-.slider {
-  padding-bottom: 20px;
-
-  @media (min-width: @tablet-width) {
-    position: relative;
-    background-color: @special-white;
-  }
-
-  @media (min-width: @desktop-width) {
-    background-color: @gray;
-  }
-}
-
-.slider__wrapper {
-  @media (min-width: @tablet-width) {
-    width: 560px;
-    margin: 0 auto;
-    padding: 0;
-    position: relative;
-    height: 462px;
-  }
-
-  @media (min-width: @desktop-width) {
-    height: 0;
-  }
-}
-
 .slider__list {
   list-style-type: none;
-  padding: 0;
-  margin: 0;
+  padding: 0 0 40px;
+  margin: 0 20px 0;
 
   @media (min-width: @tablet-width) {
-    position: absolute;
-    bottom: 340px;
-    left: 140px;
+    margin: 0 104px 0;
+    padding: 0 0 101px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 110px 0 770px;
+    padding: 00 85px;
   }
 }
 
@@ -41,9 +18,4 @@
   &--disabled {
     display: none;
   }
-}
-
-.slider__image {
-  display: block;
-  margin: 0 auto;
 }
