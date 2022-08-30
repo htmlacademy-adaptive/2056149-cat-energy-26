@@ -1,10 +1,14 @@
 .advantages {
+  padding: 10px 0 49px;
+
   @media (min-width: @tablet-width) {
     border-bottom: 1px solid @special-white-2;
+    padding: 23px 0 24px;
   }
 
   @media (min-width: @desktop-width) {
     border: none;
+    padding: 36px 0 35px;
   }
 }
 
@@ -26,32 +30,32 @@
   line-height: 40px;
   font-weight: 400;
   margin: 0 0 40px 21px;
-  padding-top: 20px;
   text-align: left;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin: 0 0 72px 30px;
-    padding-top: 45px;
+    margin: 0;
+    margin-bottom: 32px;
+    padding-left: 30px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 71px;
-    margin-left: 110px;
+    padding-left: 110px;
   }
 }
 
 .advantages__list {
+  display: grid;
+  gap: 20px;
   list-style-type: none;
   padding: 0;
-  padding-bottom: 29px;
   margin: 0;
 
   @media (min-width: @tablet-width) {
-    display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-bottom: 104px;
+    padding: 0 30px;
+    gap: 37px 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -62,15 +66,14 @@
 }
 
 .advantages__item {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 60px 1fr;
+  gap: 20px;
+  width: 280px;
 
   &::before {
     background-color: @green;
-    background-repeat: no-repeat;
-    width: 60px;
     height: 60px;
     line-height: 75px;
     text-align: center;
@@ -89,12 +92,17 @@
   }
 
   &--alarm::before {
-    content: url("../img/advantages/advantages_alarm.svg");
+    content: url("../img/advantages/advantages_alarm.svg")
+  }
+
+  &--alarm {
+    margin: 0;
   }
 
   @media (min-width: @tablet-width) {
-    flex-direction: column;
-    margin: 0;
+    grid-template-columns: 1fr;
+    gap: 0;
+    height: 280px;
 
     &::before {
       width: 80px;
@@ -106,8 +114,8 @@
       position: absolute;
       font-size: 280px;
       color: @gray;
-      left: 118px;
-      top: 85px;
+      left: 0;
+      top: 0;
       z-index: -1;
     }
 
@@ -131,16 +139,13 @@
 
 .advantages__description {
   margin: 0;
-  margin-left: 20px;
-  width: 199px;
   color: @dark-grey;
   font-family: @arial;
   font-size: 14px;
   line-height: 18px;
 
   @media (min-width: @tablet-width) {
-    width: 245px;
-    margin: 31px 0 134px;
+    margin: 0;
     font-size: 16px;
     line-height: 24px;
   }

@@ -1,3 +1,23 @@
+.main-header {
+  @media (min-width: @tablet-width) {
+    padding-bottom: 31px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 57px;
+
+    &--index {
+      background: linear-gradient(to right, @white 50%, @green-3 50%);
+
+      .site-list__item-link {
+        @media (min-width: @desktop-width) {
+          color: @white;
+        }
+      }
+    }
+  }
+}
+
 .main-header__wrapper {
   @media (min-width: @tablet-width) {
     margin: 0 auto;
@@ -6,15 +26,5 @@
 
   @media (min-width: @desktop-width) {
     width: 1440px;
-
-    &--gradient {
-      background: linear-gradient(to right, @white 720px, @green-3 720px);
-
-      .site-list__item-link {
-        @media (min-width: @desktop-width) {
-          color: @white;
-        }
-      }
-    }
   }
 }
