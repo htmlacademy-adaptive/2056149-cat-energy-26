@@ -1,12 +1,18 @@
-.copyright {
+.copyright__link-wrapper {
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 22px 20px 22px 19px;
+  padding-top: 22px;
+
+  @media (min-width: @tablet-width) {
+    width: 163px;
+    padding: 0;
+  }
 }
 
 .copyright__link {
+  display: inline-block;
+  line-height: 0;
   color: @dark-grey;
   text-decoration: none;
-  line-height: 0;
-  align-self: center;
 }

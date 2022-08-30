@@ -1,26 +1,20 @@
 .main-header__wrapper {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 20px;
-  padding-right: 20px;
-  height: 65px;
-}
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    width: 768px;
+  }
 
-.main-header {
-  display: flex;
-  flex-direction: column;
-  background-color: @white;
-  color: @black;
-}
+  @media (min-width: @desktop-width) {
+    width: 1440px;
 
-.main-header__logo {
-  display: inline-block;
-  align-self: center;
-}
+    &--gradient {
+      background: linear-gradient(to right, @white 720px, @green-3 720px);
 
-.main-header__toggle {
-  display: inline-block;
-  align-self: center;
-  border: none;
-  background-color: transparent;
+      .site-list__item-link {
+        @media (min-width: @desktop-width) {
+          color: @white;
+        }
+      }
+    }
+  }
 }

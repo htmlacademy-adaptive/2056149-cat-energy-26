@@ -1,22 +1,49 @@
 .gift {
-  margin: 0 20px 35px;
+  padding: 35px 0;
+  margin: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 69px 30px 76px;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
 }
 
 .gift__text {
   position: relative;
-  font-family: 'Arial';
+  font-family: @arial;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   color: @white;
-  box-shadow: inset 0 0 0 140px  #68B738D9;
+  box-shadow: inset 0 290px @green-3;
   background: url("../img/gift/gift-cat.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
   margin: 0;
   padding: 187px 61px 43px 58px;
+
   &::before {
     content: url("../img/gift/gift-gift.svg");
     position: absolute;
     top: 59px;
     left: 101px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 71px 124px 69px 422px;
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 185px 43px 42px 41px;
+    text-align: center;
+
+    &::before {
+      left: 84px;
+    }
   }
 }

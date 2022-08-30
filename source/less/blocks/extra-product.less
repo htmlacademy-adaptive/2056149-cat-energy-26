@@ -1,6 +1,34 @@
 .extra-product {
-  padding-bottom: 19px;
-  border-bottom: 1px solid @speecial-grey;
+  border-bottom: 1px solid @special-grey;
+  padding: 13px 0 19px;
+  margin: 0 20px 0;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: 1px solid @special-grey;
+    margin: 0;
+    padding: 26px 38px 28px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    padding: 14px 0 16px;
+    width: 894px;
+    justify-content: space-between;
+  }
+}
+
+.extra-product__wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 612px;
+    margin: 0;
+    align-items: center;
+  }
 }
 
 .extra-product__name {
@@ -9,39 +37,59 @@
   line-height: 16px;
   text-transform: uppercase;
   color: @dark-grey-2;
-  margin-top: 13px;
-  margin-bottom: 13px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .extra-product__description-wrapper {
+  width: 280px;
   display: flex;
   justify-content: space-between;
-  font-family: "Arial";
+  margin: 13px 0 15px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    width: 225px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 288px;
+  }
+}
+
+.extra-product__description-item {
+  margin: 0;
+  font-family: @arial;
+  color: @dark-grey;
   font-size: 14px;
   line-height: 14px;
-  margin-left: 20px;
-  margin-right: 20px;
-  }
 
-  .extra-product__description-item {
-    margin: 0;
-  }
-
-  .extra-product__button {
-    display: inline-block;
-    width: 280px;
-    height: 40px;
-    background-color: @green;
-    color: @white;
-    border: none;
-    font-family: 'Oswald';
+  @media (min-width: @tablet-width) {
     font-size: 16px;
-    line-height: 40px;
-    text-transform: uppercase;
-    margin-top: 15px;
-    margin-left: 20px;
-    margin-right: 20px;
+    line-height: 20px;
+  }
+}
+
+.extra-product__button {
+  display: inline-block;
+  width: 280px;
+  background-color: @green;
+  color: @white;
+  border: none;
+  font-family: @oswald;
+  font-size: 16px;
+  line-height: 40px;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    width: 632px;
   }
 
+  @media (min-width: @desktop-width) {
+    width: 244px;
+  }
+}
