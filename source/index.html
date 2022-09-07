@@ -9,7 +9,7 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header main-header--index">
+  <header class="main-header">
     <div class="main-header__wrapper">
       <nav class="main-nav">
         <div class="main-nav__logo-container">
@@ -95,13 +95,13 @@
         </div>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__item-link">Главная</a>
+            <a class="site-list__item-link site-list__item-link--background">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__item-link" href="catalog.html">Каталог продукции</a>
+            <a class="site-list__item-link site-list__item-link--background" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__item-link" href="form.html">Подбор программы</a>
+            <a class="site-list__item-link site-list__item-link--background" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -116,7 +116,12 @@
         <p class="promo__title">Функциональное <br>
           питание для котов</p>
         <p class="promo__intro">Занялся собой? Займись котом!</p>
-        <img class="promo__image" src="img/can.png" width="280" height="270" alt="Питание для котов со вкусом курицы.">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/promo/promo-can-desktop.png">
+          <source media="(min-width: 768px)" srcset="img/promo/promo-can-tablet.png">
+          <img class="promo__image" src="img/promo/promo-can-mobile.png" width="280" height="270"
+            alt="Питание для котов со вкусом курицы.">
+        </picture>
         <a class="promo__button" href="form.html">Подобрать программу</a>
       </div>
     </section>
@@ -183,14 +188,16 @@
           </div>
         </div>
         <div class="example__slider slider">
-          <ul class="slider__list">
-            <li class="slider__item">
-              <img class="slider__image" src="img/cat-fat.png" width="280" height="232" alt="Толстый кот">
-            </li>
-            <li class="slider__item slider__item--disabled">
-              <img class="slider__image" src="img/cat-skinny.png" width="280" height="232" alt="Худой кот">
-            </li>
-          </ul>
+          <div class="slider__wrapper">
+            <div class="slider__image slider__image--pro"></div>
+            <div class="slider__image slider__image--slim"></div>
+            <div class="slider__thumb">
+              <svg class="slider__thumb-image" aria-hidden="true" focusable="false" width="24" height="18"
+                viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 0 0 9l8 9V0ZM24 9l-8-9v18l8-9Z" fill="#666" />
+              </svg>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -204,7 +211,12 @@
             Конюшенная, д. 19/8 <br>
             Санкт-Петербург</p>
         </div>
-        <div class="contacts__map"></div>
+      </div>
+      <div class="contacts__map">
+        <iframe class="contacts__map-image"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1662202859962!5m2!1sru!2sru"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
   </main>
