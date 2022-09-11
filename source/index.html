@@ -55,9 +55,12 @@
           питание для котов</p>
         <p class="promo__intro">Занялся собой? Займись котом!</p>
         <picture>
-          <source media="(min-width: 1440px)" srcset="img/promo/promo-can-desktop.png">
-          <source media="(min-width: 768px)" srcset="img/promo/promo-can-tablet.png">
-          <img class="promo__image" src="img/promo/promo-can-mobile.png" width="280" height="270"
+          <source type="image/webp" srcset="./img/promo/promo-can-desktop.webp 1x, ./img/promo/promo-can-desktop@2x.webp 2x">
+          <source type="image/webp" srcset="./img/promo/promo-can-tablet.webp 1x, ./img/promo/promo-can-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="./img/promo/promo-can-mobile.webp 1x, ./img/promo/promo-can-mobile@2x.webp 2x">
+          <source media="(min-width: 1440px)" srcset="./img/promo/promo-can-desktop.png 1x, ./img/promo/promo-can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="./img/promo/promo-can-tablet.png 1x, ./img/promo/promo-can-tablet@2x.png 2x">
+          <img class="promo__image" src="./img/promo/promo-can-mobile.png" srcset="./img/promo/promo-can-mobile@2x.png 2x"
             alt="Питание для котов со вкусом курицы.">
         </picture>
         <a class="promo__button" href="form.html">Подобрать программу</a>
@@ -130,9 +133,8 @@
             <div class="slider__image slider__image--pro"></div>
             <div class="slider__image slider__image--slim"></div>
             <div class="slider__thumb">
-              <svg class="slider__thumb-image" aria-hidden="true" focusable="false" width="24" height="18"
-                viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8 0 0 9l8 9V0ZM24 9l-8-9v18l8-9Z" fill="#666" />
+              <svg class="slider__thumb-icon" width="24" height="18">
+                <use xlink:href="./img/sprite.svg#icon-thumb"></use>
               </svg>
             </div>
           </div>
