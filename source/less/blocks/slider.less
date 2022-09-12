@@ -1,8 +1,8 @@
-.slider__wrapper {
-  position: relative;
+.slider {
+  margin: 0 auto;
   width: 280px;
   height: 256px;
-  margin: 0 auto;
+  display: flex;
 
   @media (min-width: @tablet-width) {
     width: 560px;
@@ -10,63 +10,40 @@
   }
 }
 
-.slider__image {
-  position: absolute;
-  width: 100%;
+.slider__image img {
   height: 100%;
+  object-fit: cover;
+}
 
-  &--pro {
-    background-image: url("../img/slider/slider-pro-mobile.png");
-    width: 50%;
-    z-index: 2;
-    border-right: 2px solid @special-grey-3;
+.slider__image--pro img {
+  object-position: left;
+}
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/slider/slider-pro-mobile@2x.png");
-      background-size: 280px auto;
-    }
+.slider__image--slim img {
+  object-position: right;
+}
 
-    @media (min-width: @tablet-width) {
-      background-image: url("../img/slider/slider-pro-tablet.png");
 
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/slider/slider-pro-tablet@2x.png");
-        background-size: 560px auto;
-      }
-    }
-  }
+.slider__toggle {
+  position: absolute;
+  right: 50%;
+  width: 4px;
+  height: 256px;
+  border-radius: 2px;
+  background-color: @special-grey-3;
 
-  &--slim {
-    background-image: url("../img/slider/slider-slim-mobile.png");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/slider/slider-slim-mobile@2x.png");
-      background-size: 280px auto;
-    }
-
-    @media (min-width: @tablet-width) {
-      background-image: url("../img/slider/slider-slim-tablet.png");
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/slider/slider-slim-tablet@2x.png");
-        background-size: 560px auto;
-      }
-    }
+  @media (min-width: @tablet-width) {
+    height: 512px;
   }
 }
 
-.slider__thumb {
+.slider__button {
   position: absolute;
   width: 40px;
   height: 40px;
-  background-color: @white;
-  border: 2px solid @special-grey-3;
-  border-radius: 50%;
-  z-index: 3;
-  top: calc(50% - 40px);
+  border-radius: 20px;
+  top: calc(50% - 20px);
   left: calc(50% - 20px);
+  border: 2px solid @special-grey-3;
 }
 
-.slider__thumb-icon {
-  padding: 11px 8px;
-}

@@ -34,9 +34,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
     padding: 0 110px;
   }
 }
@@ -44,12 +44,25 @@
 .programs__item {
   position: relative;
   background-color: @gray;
+  padding: 30px 20px 18px;
+
+  @media (min-width: @tablet-width) {
+    padding: 77px 316px 53px 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 57px 52px 55px;
+  }
 
   &--slim {
     margin-bottom: 20px;
 
     @media (min-width: @tablet-width) {
       margin-bottom: 30px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin: 0;
     }
   }
 
@@ -117,15 +130,6 @@
       top: 67px;
     }
   }
-
-  @media (min-width: @tablet-width) {
-    width: 708px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 570px;
-    margin: 0;
-  }
 }
 
 .programs__title {
@@ -134,19 +138,19 @@
   font-weight: 400;
   text-transform: uppercase;
   margin: 0;
-  padding-left: 91px;
-  padding-top: 30px;
+  margin-bottom: 29px;
+  padding-left: 71px;
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    padding-left: 53px;
-    padding-top: 77px;
-    margin: 0;
+    padding: 0;
+    margin-bottom: 24px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 214px;
+    padding-left: 162px;
+    margin-bottom: 73px;
   }
 }
 
@@ -155,24 +159,21 @@
   font-family: @arial;
   font-size: 14px;
   line-height: 18px;
-  padding: 0 33px 23px 20px;
+  padding-bottom: 23px;
   margin: 0;
-  margin-top: 29px;
   border-bottom: 1px solid @special-grey-4;
 
   @media (min-width: @tablet-width) {
-    width: 340px;
     font-size: 16px;
     line-height: 24px;
     color: @black;
     border: none;
     padding: 0;
-    margin: 24px 316px 52px 52px;
+    margin-bottom: 48px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 467px;
-    margin: 73px 51px 27px 52px;
+    margin-bottom: 23px;
   }
 }
 
@@ -183,7 +184,7 @@
   text-transform: uppercase;
   text-decoration: none;
   color: @black;
-  padding: 15px 0 18px 19px;
+  padding-top: 15px;
 
   &::after {
     content: url("../img/programs/programs-arrow.svg");
@@ -193,10 +194,6 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    padding: 0 0 57px 52px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding: 0 0 59px 52px;
+    padding: 0;
   }
 }

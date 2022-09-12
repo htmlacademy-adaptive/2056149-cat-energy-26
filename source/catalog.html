@@ -18,28 +18,35 @@
       <nav class="main-nav">
         <div class="main-nav__logo-container">
           <div class="main-nav__logo-wrapper">
-            <a class="main-nav__logo">
+            <a class="main-nav__logo" href="index.html">
               <span class="visually-hidden">Логотип интернет-магазина «Кэт энерджи»</span>
-              <img class="logo" src="./img/logotype-adaptive.svg" width="202" height="59"
-                alt="Логотип интернет-магазина «Кэт энерджи».">
+              <pucture>
+                <source media="(min-width: 1440px)" srcset="./img/main-nav/main-nav-logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="./img/main-nav/main-nav-logo-tablet.svg">
+                <img class="main-nav__logo-image" src="./img/main-nav/main-nav-logo.svg" width="191" height="38"
+                  alt="Логотип интернет-магазина «Кэт энерджи».">
+              </pucture>
             </a>
             <button class="main-nav__toggle" type="button">
               <span class="visually-hidden">Открыть меню</span>
               <svg class="main-nav__toggle-icon" width="24" height="18">
                 <use xlink:href="./img/sprite.svg#icon-toggle"></use>
               </svg>
+              <svg class="main-nav__toggle-close-icon" width="20" height="20">
+                <use xlink:href="./img/sprite.svg#icon-toggle-close"></use>
+              </svg>
             </button>
           </div>
         </div>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__item-link site-list__item-link--background" href="index.html">Главная</a>
+            <a class="site-list__item-link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__item-link site-list__item-link--background">Каталог продукции</a>
+            <a class="site-list__item-link site-list__item-link--current">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__item-link site-list__item-link--background" href="form.html">Подбор программы</a>
+            <a class="site-list__item-link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -55,7 +62,7 @@
             <div class="product__wrapper">
               <picture>
                 <source media="(min-width: 768px)" srcset="./img/catalog/catalog-chicken-small-tablet.png">
-                <img class="product__image" src="./img/catalog/catalog-chicken-small.png" width="68" height="86"
+                <img class="product__image" src="./img/catalog/catalog-chicken-small.png"
                   alt="Питание для котов со вкусом курицы 500 грамм.">
               </picture>
               <table class="product__table">
@@ -81,7 +88,7 @@
               <picture>
                 <source media="(min-width: 1440px)" srcset="./img/catalog/catalog-chicken-big-desktop.png">
                 <source media="(min-width: 768px)" srcset="./img/catalog/catalog-chicken-big-tablet.png">
-                <img class="product__image" src="./img/catalog/catalog-chicken-big.png" width="84" height="101"
+                <img class="product__image" src="./img/catalog/catalog-chicken-big.png"
                   alt="Питание для котов со вкусом курицы 1000 грамм.">
               </picture>
               <table class="product__table">
@@ -106,7 +113,7 @@
             <div class="product__wrapper">
               <picture>
                 <source media="(min-width: 768px)" srcset="./img/catalog/catalog-fish-small-tablet.png">
-                <img class="product__image" src="./img/catalog/catalog-fish-small.png" width="68" height="78"
+                <img class="product__image" src="./img/catalog/catalog-fish-small.png"
                   alt="Питание для котов со вкусом рыбы 500 грамм.">
               </picture>
               <table class="product__table">
@@ -132,7 +139,7 @@
               <picture>
                 <source media="(min-width: 1440px)" srcset="./img/catalog/catalog-fish-big-desktop.png">
                 <source media="(min-width: 768px)" srcset="./img/catalog/catalog-fish-big-tablet.png">
-                <img class="product__image" src="./img/catalog/catalog-fish-big.png" width="84" height="101"
+                <img class="product__image" src="./img/catalog/catalog-fish-big.png"
                   alt="Питание для котов со вкусом рыбы 1000 грамм.">
               </picture>
               <table class="product__table">
@@ -157,7 +164,7 @@
             <div class="product__wrapper">
               <picture>
                 <source media="(min-width: 768px)" srcset="./img/catalog/catalog-buckwheat-small-tablet.png">
-                <img class="product__image" src="./img/catalog/catalog-buckwheat-small.png" width="68" height="78"
+                <img class="product__image" src="./img/catalog/catalog-buckwheat-small.png"
                   alt="Питание для котов со вкусом гречки 500 грамм.">
               </picture>
               <table class="product__table">
@@ -183,7 +190,7 @@
               <picture>
                 <source media="(min-width: 1440px)" srcset="./img/catalog/catalog-buckwheat-big-desktop.png">
                 <source media="(min-width: 768px)" srcset="./img/catalog/catalog-buckwheat-big-tablet.png">
-                <img class="product__image" src="./img/catalog/catalog-buckwheat-big.png" width="84" height="100"
+                <img class="product__image" src="./img/catalog/catalog-buckwheat-big.png"
                   alt="Питание для котов со вкусом гречки 1000 грамм.">
               </picture>
               <table class="product__table">
@@ -208,7 +215,7 @@
             <div class="product__wrapper">
               <picture>
                 <source media="(min-width: 768px)" srcset="./img/catalog/catalog-rice-small-tablet.png">
-                <img class="product__image" src="./img/catalog/catalog-rice-small.png" width="72" height="84"
+                <img class="product__image" src="./img/catalog/catalog-rice-small.png"
                   alt="Питание для котов со вкусом риса 500 грамм.">
               </picture>
               <table class="product__table">
@@ -230,10 +237,6 @@
             <a class="product__button" href="#">Заказать</a>
           </li>
           <li class="catalog__item product product--order">
-            <svg class="product__plus" aria-hidden="true" focusable="false" width="30" height="30" viewBox="0 0 30 30"
-              fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path stroke="#D3D3D3" stroke-width="2" d="M15 0v30M30 15H0" />
-            </svg>
             <p class="product__name product__name--order">Показать еще 100500 товаров</p>
             <p class="product__description-item product__description-item--order">На самом деле вкусов гораздо больше!
             </p>

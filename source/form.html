@@ -18,28 +18,35 @@
       <nav class="main-nav">
         <div class="main-nav__logo-container">
           <div class="main-nav__logo-wrapper">
-            <a class="main-nav__logo">
+            <a class="main-nav__logo" href="index.html">
               <span class="visually-hidden">Логотип интернет-магазина «Кэт энерджи»</span>
-              <img class="logo" src="./img/logotype-adaptive.svg" width="202" height="59"
-                alt="Логотип интернет-магазина «Кэт энерджи».">
+              <pucture>
+                <source media="(min-width: 1440px)" srcset="./img/main-nav/main-nav-logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="./img/main-nav/main-nav-logo-tablet.svg">
+                <img class="main-nav__logo-image" src="./img/main-nav/main-nav-logo.svg" width="191" height="38"
+                  alt="Логотип интернет-магазина «Кэт энерджи».">
+              </pucture>
             </a>
             <button class="main-nav__toggle" type="button">
               <span class="visually-hidden">Открыть меню</span>
               <svg class="main-nav__toggle-icon" width="24" height="18">
                 <use xlink:href="./img/sprite.svg#icon-toggle"></use>
               </svg>
+              <svg class="main-nav__toggle-close-icon" width="20" height="20">
+                <use xlink:href="./img/sprite.svg#icon-toggle-close"></use>
+              </svg>
             </button>
           </div>
         </div>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__item-link site-list__item-link--background" href="index.html">Главная</a>
+            <a class="site-list__item-link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__item-link site-list__item-link--background" href="catalog.html">Каталог продукции</a>
+            <a class="site-list__item-link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__item-link site-list__item-link--background">Подбор программы</a>
+            <a class="site-list__item-link site-list__item-link--current">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -71,19 +78,19 @@
             <div class="program__radiobuttons-wrapper">
               <fieldset class="program__fieldset">
                 <label class="program__label">
-                  <span class="program__radiobutton program__radiobutton--active"></span>
+                  <input class="visually-hidden control-input" type="radio" name="program" value="slim" checked>
+                  <span class="program__radiobutton"></span>
                   <span class="program__text program__text--choice">Похудение</span>
-                  <input class="visually-hidden" type="radio" name="program" value="slim">
                 </label>
                 <label class="program__label">
+                  <input class="visually-hidden control-input " type="radio" name="program" value="pro">
                   <span class="program__radiobutton"></span>
                   <span class="program__text program__text--choice">Набор массы</span>
-                  <input class="visually-hidden" type="radio" name="program" value="pro">
                 </label>
                 <label class="program__label">
+                  <input class="visually-hidden control-input" type="radio" name="program" value="advice">
                   <span class="program__radiobutton"></span>
                   <span class="program__text program__text--choice">Не знаю (Нужен ваш совет)</span>
-                  <input class="visually-hidden" type="radio" name="program" value="advice">
                 </label>
               </fieldset>
             </div>
@@ -94,14 +101,14 @@
               <label class="program__label">
                 <span class="program__text">E-mail:*</span>
                 <input class="program__input" type="email" name="email" value="kuklachev@gmail.com" required>
-                <svg class="program__email-icon" width="19" height="14">
+                <svg class="program__icon" width="19" height="14">
                   <use xlink:href="./img/sprite.svg#icon-email"></use>
                 </svg>
               </label>
               <label class="program__label">
                 <span class="program__text">Телефон:*</span>
                 <input class="program__input" type="tel" name="phone" value="8 (960) 900-60-90" required>
-                <svg class="program__email-icon" width="20" height="21">
+                <svg class="program__icon" width="20" height="21">
                   <use xlink:href="./img/sprite.svg#icon-phone"></use>
                 </svg>
               </label>
@@ -117,24 +124,24 @@
           <fieldset class="program__fieldset">
             <div class="program__checkbox-wrapper">
               <label class="program__label">
-                <span class="program__checkbox program__checkbox--active"></span>
+                <input class="visually-hidden control-input" type="checkbox" name="additionally" value="sweetener" checked>
+                <span class="program__checkbox"></span>
                 <span class="program__text program__text--choice">Сахарозаменитель</span>
-                <input class="visually-hidden" type="checkbox" name="additionally" value="sweetener" checked>
               </label>
               <label class="program__label">
+                <input class="visually-hidden control-input" type="checkbox" name="additionally" value="water">
                 <span class="program__checkbox"></span>
                 <span class="program__text program__text--choice">Питьевая вода</span>
-                <input class="visually-hidden" type="checkbox" name="additionally" value="water">
               </label>
               <label class="program__label">
+                <input class="visually-hidden control-input" type="checkbox" name="additionally" value="milk">
                 <span class="program__checkbox"></span>
                 <span class="program__text program__text--choice">Молоко</span>
-                <input class="visually-hidden" type="checkbox" name="additionally" value="milk">
               </label>
               <label class="program__label">
+                <input class="visually-hidden control-input" type="checkbox" name="additionally" value="vitamins">
                 <span class="program__checkbox"></span>
                 <span class="program__text program__text--choice">Витамины</span>
-                <input class="visually-hidden" type="checkbox" name="additionally" value="vitamins">
               </label>
             </div>
           </fieldset>

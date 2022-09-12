@@ -2,6 +2,9 @@
   <symbol viewBox="0 0 24 18" id="icon-toggle">
     <path stroke="#000" stroke-width="1.5" d="M0 1.25h24M0 9.25h24M0 17.25h24"/>
   </symbol>
+  <symbol viewBox="0 0 20 20" id="icon-toggle-close">
+    <path transform="matrix(.68659 -.72705 .68659 .72705 2 20)" stroke="#000" stroke-width="1.5" d="M0-.75h24.76"/><path transform="matrix(.68659 .72705 -.68659 .72705 1 2)" stroke="#000" stroke-width="1.5" d="M0-.75h24.76"/>
+  </symbol>
   <symbol viewBox="0 0 24 18" id="icon-thumb">
     <path d="M8 0 0 9l8 9V0ZM24 9l-8-9v18l8-9Z" fill="#666" />
   </symbol>
