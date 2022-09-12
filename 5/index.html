@@ -21,20 +21,27 @@
           <div class="main-nav__logo-wrapper">
             <a class="main-nav__logo">
               <span class="visually-hidden">Логотип интернет-магазина «Кэт энерджи»</span>
-              <img class="logo" src="./img/logotype-adaptive.svg" width="202" height="59"
-                alt="Логотип интернет-магазина «Кэт энерджи».">
+              <pucture>
+                <source media="(min-width: 1440px)" srcset="./img/main-nav/main-nav-logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="./img/main-nav/main-nav-logo-tablet.svg">
+                <img class="main-nav__logo-image" src="./img/main-nav/main-nav-logo.svg" width="191" height="38"
+                  alt="Логотип интернет-магазина «Кэт энерджи».">
+              </pucture>
             </a>
             <button class="main-nav__toggle" type="button">
               <span class="visually-hidden">Открыть меню</span>
               <svg class="main-nav__toggle-icon" width="24" height="18">
                 <use xlink:href="./img/sprite.svg#icon-toggle"></use>
               </svg>
+              <svg class="main-nav__toggle-close-icon" width="20" height="20">
+                <use xlink:href="./img/sprite.svg#icon-toggle-close"></use>
+              </svg>
             </button>
           </div>
         </div>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__item-link site-list__item-link--background">Главная</a>
+            <a class="site-list__item-link site-list__item-link--background site-list__item-link--current site-list__item-link--current-background">Главная</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__item-link site-list__item-link--background" href="catalog.html">Каталог продукции</a>
@@ -56,13 +63,18 @@
           питание для котов</p>
         <p class="promo__intro">Занялся собой? Займись котом!</p>
         <picture>
-          <source type="image/webp" srcset="./img/promo/promo-can-desktop.webp 1x, ./img/promo/promo-can-desktop@2x.webp 2x">
-          <source type="image/webp" srcset="./img/promo/promo-can-tablet.webp 1x, ./img/promo/promo-can-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="./img/promo/promo-can-mobile.webp 1x, ./img/promo/promo-can-mobile@2x.webp 2x">
-          <source media="(min-width: 1440px)" srcset="./img/promo/promo-can-desktop.png 1x, ./img/promo/promo-can-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="./img/promo/promo-can-tablet.png 1x, ./img/promo/promo-can-tablet@2x.png 2x">
-          <img class="promo__image" src="./img/promo/promo-can-mobile.png" srcset="./img/promo/promo-can-mobile@2x.png 2x"
-            alt="Питание для котов со вкусом курицы.">
+          <source type="image/webp"
+            srcset="./img/promo/promo-can-desktop.webp 1x, ./img/promo/promo-can-desktop@2x.webp 2x">
+          <source type="image/webp"
+            srcset="./img/promo/promo-can-tablet.webp 1x, ./img/promo/promo-can-tablet@2x.webp 2x">
+          <source type="image/webp"
+            srcset="./img/promo/promo-can-mobile.webp 1x, ./img/promo/promo-can-mobile@2x.webp 2x">
+          <source media="(min-width: 1440px)"
+            srcset="./img/promo/promo-can-desktop.png 1x, ./img/promo/promo-can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)"
+            srcset="./img/promo/promo-can-tablet.png 1x, ./img/promo/promo-can-tablet@2x.png 2x">
+          <img class="promo__image" src="./img/promo/promo-can-mobile.png"
+            srcset="./img/promo/promo-can-mobile@2x.png 2x" alt="Питание для котов со вкусом курицы.">
         </picture>
         <a class="promo__button" href="form.html">Подобрать программу</a>
       </div>
@@ -130,14 +142,28 @@
           </div>
         </div>
         <div class="example__slider slider">
-          <div class="slider__wrapper">
-            <div class="slider__image slider__image--pro"></div>
-            <div class="slider__image slider__image--slim"></div>
-            <div class="slider__thumb">
+          <div class="slider__toggle">
+            <button class="slider__button" type="button">
               <svg class="slider__thumb-icon" width="24" height="18">
                 <use xlink:href="./img/sprite.svg#icon-thumb"></use>
               </svg>
-            </div>
+            </button>
+          </div>
+          <div class="slider__image slider__image--pro">
+            <picture>
+              <source media="(min-width: 768px)"
+                srcset="./img/slider/slider-pro-tablet.png 1x, ./img/slider/slider-pro-tablet@2x.png 2x">
+              <img src="./img/slider/slider-pro-mobile.png" srcset="./img/slider/slider-pro-mobile@2x.png 2x"
+                alt="Толстый кот.">
+            </picture>
+          </div>
+          <div class="slider__image slider__image--slim">
+            <picture>
+              <source media="(min-width: 768px)"
+                srcset="./img/slider/slider-slim-tablet.png 1x, ./img/slider/slider-slim-tablet@2x.png 2x">
+              <img src="./img/slider/slider-slim-mobile.png" srcset="./img/slider/slider-slim-mobile@2x.png 2x"
+                alt="Тощий кот.">
+            </picture>
           </div>
         </div>
       </div>
