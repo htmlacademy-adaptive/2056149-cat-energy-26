@@ -1,14 +1,33 @@
 .gift {
-  padding: 35px 0;
-  margin: 0 20px;
+  padding: 35px 20px;
+  background-image: url("../img/gift/gift-cat.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gift/gift-cat@2x.jpg");
+    background-size: 279px auto;
+  }
 
   @media (min-width: @tablet-width) {
-    padding: 69px 30px 76px;
+    padding: 0 30px;
     margin: 0;
+    background-image: url("../img/gift/gift-cat-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift/gift-cat-tablet@2x.jpg");
+      background-size: 707px auto;
+    }
   }
 
   @media (min-width: @desktop-width) {
     padding: 0;
+    background-image: url("../img/gift/gift-cat-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift/gift-cat-desktop@2x.jpg");
+      background-size: 245px auto;
+    }
   }
 }
 
@@ -19,12 +38,9 @@
   line-height: 20px;
   text-align: center;
   color: @white;
-  box-shadow: inset 0 290px @green-3;
-  background: url("../img/gift/gift-cat.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
   margin: 0;
   padding: 187px 61px 43px 58px;
+  box-shadow: inset 0 290px @green-3;
 
   &::before {
     content: url("../img/gift/gift-gift.svg");
