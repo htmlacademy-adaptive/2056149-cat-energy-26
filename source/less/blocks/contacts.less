@@ -30,10 +30,10 @@
 
 .contacts__title-wrapper {
   background-color: @white;
-  display: flex;
+  display: grid;
   padding: 0 20px;
-  justify-content: space-between;
-  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
   margin-bottom: 26px;
 
   @media (min-width: @tablet-width) {

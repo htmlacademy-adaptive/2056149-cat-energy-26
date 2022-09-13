@@ -2,9 +2,9 @@
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
-    height: 76px;
+    height: 51px;
     padding: 0 30px;
-    align-items: flex-end;
+    align-items: center;
   }
 
   @media (min-width: @desktop-width) {
@@ -64,4 +64,32 @@
 
 .main-nav__toggle-close-icon {
   display: none;
+}
+
+.main-nav__logo-icon {
+  display: none;
+
+  @media (max-width: @mobile-width-only) {
+    display: block;
+  }
+}
+
+.main-nav__logo-icon-full {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav__logo-icon-flash {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
 }

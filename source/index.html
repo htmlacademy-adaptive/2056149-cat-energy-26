@@ -20,12 +20,15 @@
           <div class="main-nav__logo-wrapper">
             <a class="main-nav__logo">
               <span class="visually-hidden">Логотип интернет-магазина «Кэт энерджи»</span>
-              <pucture>
-                <source media="(min-width: 1440px)" srcset="./img/main-nav/main-nav-logo-desktop.svg">
-                <source media="(min-width: 768px)" srcset="./img/main-nav/main-nav-logo-tablet.svg">
-                <img class="main-nav__logo-image" src="./img/main-nav/main-nav-logo.svg" width="191" height="38"
-                  alt="Логотип интернет-магазина «Кэт энерджи».">
-              </pucture>
+              <svg class="main-nav__logo-icon" width="191" height="38">
+                <use xlink:href="./img/sprite.svg#icon-logo-mobile"></use>
+              </svg>
+              <svg class="main-nav__logo-icon-full" width="174" height="52">
+                <use xlink:href="./img/sprite.svg#icon-logo-tablet"></use>
+              </svg>
+              <svg class="main-nav__logo-icon-flash" width="202" height="59">
+                <use xlink:href="./img/sprite.svg#icon-logo-desktop"></use>
+              </svg>
             </a>
             <button class="main-nav__toggle" type="button">
               <span class="visually-hidden">Открыть меню</span>
@@ -40,7 +43,8 @@
         </div>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__item-link site-list__item-link--background site-list__item-link--current site-list__item-link--current-background">Главная</a>
+            <a
+              class="site-list__item-link site-list__item-link--background site-list__item-link--current site-list__item-link--current-background">Главная</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__item-link site-list__item-link--background" href="catalog.html">Каталог продукции</a>
