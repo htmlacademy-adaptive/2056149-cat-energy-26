@@ -10,8 +10,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    background: linear-gradient(@white 205px, @gray 205px);
-    padding: 35px 0 75px;
+    position: relative;
+    background: linear-gradient(@white 178px, @gray 178px);
+    padding: 43px 0 75px;
   }
 }
 
@@ -41,12 +42,12 @@
     font-size: 60px;
     line-height: 60px;
     padding-left: 30px;
-    margin-bottom: 63px;
+    margin-bottom: 64px;
   }
 
   @media (min-width: @desktop-width) {
     padding-left: 110px;
-    margin-bottom: 146px;
+    margin-bottom: 147px;
   }
 }
 
@@ -56,15 +57,14 @@
   line-height: 18px;
   margin: 0;
   margin-bottom: 20px;
-  padding: 0;
-  padding-left: 20px;
+  padding: 0 20px;
   color: @dark-grey;
 
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 54px;
+    margin-bottom: 53px;
     padding-left: 30px;
   }
 
@@ -84,7 +84,7 @@
 
   @media (min-width: @desktop-width) {
     flex-direction: column;
-    margin: 0 964px 75px 110px;
+    margin: 0 964px 0 110px;
   }
 }
 
@@ -101,12 +101,12 @@
 }
 
 .example__item {
-  width: 124px;
+  width: 122px;
   border: 1px solid @special-grey;
   border-radius: 3px;
 
   @media (min-width: @tablet-width) {
-    width: 162px;
+    width: 160px;
   }
 }
 
@@ -115,11 +115,16 @@
   line-height: 24px;
   text-align: center;
   margin: 14px 0 8px;
+  text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
     font-size: 30px;
     line-height: 37px;
     margin: 15px 0 11px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 13px 0 12px;
   }
 }
 
@@ -130,9 +135,9 @@
   line-height: 12px;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: -14px;
+  margin-bottom: -16px;
   width: 77px;
-  padding: 0 10px;
+  padding: 0 6px 0 4px;
   background-color: @special-white;
 
   @media (min-width: @tablet-width) {
@@ -153,16 +158,17 @@
 
   @media (min-width: @desktop-width) {
     background-color: @gray;
+    margin-bottom: -6px;
   }
 }
 
 .example__stats-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 34px 66px 20px;
 
   @media (min-width: @tablet-width) {
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
     margin: 0;
     text-align: right;

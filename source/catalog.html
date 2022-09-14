@@ -20,12 +20,15 @@
           <div class="main-nav__logo-wrapper">
             <a class="main-nav__logo" href="index.html">
               <span class="visually-hidden">Логотип интернет-магазина «Кэт энерджи»</span>
-              <pucture>
-                <source media="(min-width: 1440px)" srcset="./img/main-nav/main-nav-logo-desktop.svg">
-                <source media="(min-width: 768px)" srcset="./img/main-nav/main-nav-logo-tablet.svg">
-                <img class="main-nav__logo-image" src="./img/main-nav/main-nav-logo.svg" width="191" height="38"
-                  alt="Логотип интернет-магазина «Кэт энерджи».">
-              </pucture>
+              <svg class="main-nav__logo-icon" width="191" height="38">
+                <use xlink:href="./img/sprite.svg#icon-logo-mobile"></use>
+              </svg>
+              <svg class="main-nav__logo-icon-full" width="174" height="52">
+                <use xlink:href="./img/sprite.svg#icon-logo-tablet"></use>
+              </svg>
+              <svg class="main-nav__logo-icon-flash" width="202" height="59">
+                <use xlink:href="./img/sprite.svg#icon-logo-desktop"></use>
+              </svg>
             </a>
             <button class="main-nav__toggle" type="button">
               <span class="visually-hidden">Открыть меню</span>
@@ -42,8 +45,8 @@
           <li class="site-list__item">
             <a class="site-list__item-link" href="index.html">Главная</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__item-link site-list__item-link--current">Каталог продукции</a>
+          <li class="site-list__item site-list__item--current">
+            <a class="site-list__item-link">Каталог продукции</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__item-link" href="form.html">Подбор программы</a>
@@ -62,7 +65,7 @@
             <div class="product__wrapper">
               <picture>
                 <source media="(min-width: 768px)" srcset="./img/catalog/catalog-chicken-small-tablet.png">
-                <img class="product__image" src="./img/catalog/catalog-chicken-small.png"
+                <img class="product__image product__image--first" src="./img/catalog/catalog-chicken-small.png"
                   alt="Питание для котов со вкусом курицы 500 грамм.">
               </picture>
               <table class="product__table">
@@ -88,7 +91,7 @@
               <picture>
                 <source media="(min-width: 1440px)" srcset="./img/catalog/catalog-chicken-big-desktop.png">
                 <source media="(min-width: 768px)" srcset="./img/catalog/catalog-chicken-big-tablet.png">
-                <img class="product__image" src="./img/catalog/catalog-chicken-big.png"
+                <img class="product__image product__image--second" src="./img/catalog/catalog-chicken-big.png"
                   alt="Питание для котов со вкусом курицы 1000 грамм.">
               </picture>
               <table class="product__table">
@@ -113,7 +116,7 @@
             <div class="product__wrapper">
               <picture>
                 <source media="(min-width: 768px)" srcset="./img/catalog/catalog-fish-small-tablet.png">
-                <img class="product__image" src="./img/catalog/catalog-fish-small.png"
+                <img class="product__image product__image--third" src="./img/catalog/catalog-fish-small.png"
                   alt="Питание для котов со вкусом рыбы 500 грамм.">
               </picture>
               <table class="product__table">
@@ -139,7 +142,7 @@
               <picture>
                 <source media="(min-width: 1440px)" srcset="./img/catalog/catalog-fish-big-desktop.png">
                 <source media="(min-width: 768px)" srcset="./img/catalog/catalog-fish-big-tablet.png">
-                <img class="product__image" src="./img/catalog/catalog-fish-big.png"
+                <img class="product__image product__image--fourth" src="./img/catalog/catalog-fish-big.png"
                   alt="Питание для котов со вкусом рыбы 1000 грамм.">
               </picture>
               <table class="product__table">
@@ -164,7 +167,7 @@
             <div class="product__wrapper">
               <picture>
                 <source media="(min-width: 768px)" srcset="./img/catalog/catalog-buckwheat-small-tablet.png">
-                <img class="product__image" src="./img/catalog/catalog-buckwheat-small.png"
+                <img class="product__image product__image--fifth" src="./img/catalog/catalog-buckwheat-small.png"
                   alt="Питание для котов со вкусом гречки 500 грамм.">
               </picture>
               <table class="product__table">
@@ -190,7 +193,7 @@
               <picture>
                 <source media="(min-width: 1440px)" srcset="./img/catalog/catalog-buckwheat-big-desktop.png">
                 <source media="(min-width: 768px)" srcset="./img/catalog/catalog-buckwheat-big-tablet.png">
-                <img class="product__image" src="./img/catalog/catalog-buckwheat-big.png"
+                <img class="product__image product__image--sixth" src="./img/catalog/catalog-buckwheat-big.png"
                   alt="Питание для котов со вкусом гречки 1000 грамм.">
               </picture>
               <table class="product__table">
@@ -215,7 +218,7 @@
             <div class="product__wrapper">
               <picture>
                 <source media="(min-width: 768px)" srcset="./img/catalog/catalog-rice-small-tablet.png">
-                <img class="product__image" src="./img/catalog/catalog-rice-small.png"
+                <img class="product__image product__image--seventh" src="./img/catalog/catalog-rice-small.png"
                   alt="Питание для котов со вкусом риса 500 грамм.">
               </picture>
               <table class="product__table">
@@ -299,15 +302,17 @@
         </div>
       </div>
     </section>
-    <section class="contacts">
+    <section class="contacts contacts--background">
       <div class="contacts__wrapper">
         <div class="contacts__title-wrapper">
           <h2 class="contacts__title">Приглашаем <br>
             к сотрудничеству <br>
             дилеров!</h2>
-          <p class="contacts__address">ул. Большая <br>
-            Конюшенная, д. 19/8 <br>
-            Санкт-Петербург</p>
+          <div class="contacts__address">
+            <p class="contacts__address-home">ул. Большая <br>
+              Конюшенная, д. 19/8</p>
+            <p class="contacts__address-city">Санкт-Петербург</p>
+          </div>
         </div>
       </div>
       <div class="contacts__map">
