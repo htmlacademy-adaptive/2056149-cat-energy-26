@@ -3,7 +3,7 @@
 
   @media (min-width: @tablet-width) {
     padding: 0;
-    padding-bottom: 36px;
+    padding-bottom: 24px;
   }
 
   @media (min-width: @desktop-width) {
@@ -44,14 +44,14 @@
 .programs__item {
   position: relative;
   background-color: @gray;
-  padding: 30px 20px 17px;
+  padding: 30px 20px 22px;
 
   @media (min-width: @tablet-width) {
-    padding: 77px 316px 53px 52px;
+    padding: 77px 316px 58px 52px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 57px 52px 55px;
+    padding: 78px 52px 58px;
   }
 
   &--slim {
@@ -86,8 +86,8 @@
     @media (min-width: @desktop-width) {
       width: 100px;
       height: 100px;
-      left: 47px;
-      top: 52px;
+      left: 52px;
+      top: 48px;
     }
   }
 
@@ -109,7 +109,7 @@
     @media (min-width: @desktop-width) {
       content: url("../img/programs/programs-slim-desktop.svg");
       left: 67px;
-      top: 41px;
+      top: 42px;
     }
   }
 
@@ -127,7 +127,7 @@
     @media (min-width: @desktop-width) {
       content: url("../img/programs/programs-pro-desktop.svg");
       left: 33px;
-      top: 67px;
+      top: 68px;
     }
   }
 }
@@ -145,12 +145,12 @@
     font-size: 36px;
     line-height: 36px;
     padding: 0;
-    margin-bottom: 24px;
+    margin-bottom: 26px;
   }
 
   @media (min-width: @desktop-width) {
     padding-left: 162px;
-    margin-bottom: 73px;
+    margin-bottom: 74px;
   }
 }
 
@@ -169,16 +169,16 @@
     color: @black;
     border: none;
     padding: 0;
-    margin-bottom: 48px;
+    margin-bottom: 50px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 23px;
+    margin-bottom: 26px;
   }
 }
 
 .programs__button {
-  display: inline-block;
+  display: block;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
@@ -193,8 +193,20 @@
   }
 
   @media (min-width: @tablet-width) {
+    display: block;
     font-size: 20px;
     line-height: 30px;
     padding: 0;
+    margin-top: 0;
+
+    &::after {
+      margin-left: 25px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::after {
+      margin-left: 28px;
+    }
   }
 }

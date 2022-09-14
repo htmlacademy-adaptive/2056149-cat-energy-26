@@ -3,12 +3,12 @@
 
   @media (min-width: @tablet-width) {
     border-bottom: 1px solid @special-white-2;
-    padding: 23px 0 24px;
+    padding: 20px 0 54px;
   }
 
   @media (min-width: @desktop-width) {
     border: none;
-    padding: 36px 0 35px;
+    padding: 47px 0 35px;
   }
 }
 
@@ -36,7 +36,7 @@
     font-size: 60px;
     line-height: 60px;
     margin: 0;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
     padding-left: 30px;
   }
 
@@ -55,13 +55,14 @@
   @media (min-width: @tablet-width) {
     grid-template-columns: 1fr 1fr;
     padding: 0 30px;
-    gap: 37px 0;
+    gap: 37px 57px;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-between;
-    padding: 0 100px 0;
+    padding: 0 110px;
+    gap: 0 78px;
   }
 }
 
@@ -102,7 +103,8 @@
 
   @media (min-width: @tablet-width) {
     grid-template-columns: 1fr;
-    gap: 0;
+    align-content: center;
+    gap: 31px;
     height: 280px;
 
     &::before {
@@ -115,25 +117,45 @@
       position: absolute;
       font-size: 280px;
       color: @gray;
-      right: 0;
-      bottom: 130px;
       z-index: -1;
     }
 
     &--leaf::after {
       content: "1";
+      right: 57px;
+      bottom: 118px;
     }
 
     &--tub::after {
       content: "2";
+      right: 34px;
+      bottom: 116px;
     }
 
     &--eat::after {
       content: "3";
+      right: 32px;
+      bottom: 117px;
     }
 
     &--alarm::after {
       content: "4";
+      right: 29px;
+      bottom: 117px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::after {
+      right: 0;
+    }
+
+    &--leaf::after {
+      right: 20px;
+    }
+
+    &--alarm::after {
+      right: -5px;
     }
   }
 }
@@ -144,6 +166,12 @@
   font-family: @arial;
   font-size: 14px;
   line-height: 18px;
+
+  @media (max-width: @mobile-width-only) {
+    & br {
+      display: none;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     margin: 0;

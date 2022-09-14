@@ -24,7 +24,7 @@
     &::after {
       content: "";
       position: absolute;
-      top: -176px;
+      top: -180px;
       left: 50%;
       background-image: url("../img/promo/promo-bg-desktop.jpg");
       background-color: @green-3;
@@ -47,6 +47,7 @@
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
+    position: relative;
     width: 768px;
   }
 
@@ -68,7 +69,7 @@
     line-height: 60px;
     color: @black;
     text-align: left;
-    margin-bottom: 41px;
+    margin-bottom: 42px;
     padding-left: 117px;
   }
 
@@ -98,6 +99,7 @@
 
   @media (min-width: @desktop-width) {
     padding-left: 190px;
+    margin-bottom: 50px;
   }
 }
 
@@ -111,15 +113,16 @@
     z-index: -1;
     margin: 0;
     bottom: 0;
+    right: 11px;
     width: 709px;
     height: 609px;
-    padding-left: 29px;
   }
 
   @media (min-width: @desktop-width) {
     width: 552px;
     height: 499px;
-    padding-left: 558px;
+    bottom: 53px;
+    right: 330px;
   }
 }
 
@@ -139,7 +142,6 @@
   @media (min-width: @tablet-width) {
     padding: 14px 26px;
     font-size: 20px;
-    line-height: 20px;
     margin: 0 404px 526px 120px;
   }
 

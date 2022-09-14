@@ -1,9 +1,9 @@
 .main-footer {
-  padding: 39px 0 22px;
   background-color: @gray;
 
-  @media (min-width: @tablet-width) {
-    padding: 58px 0 55px;
+  @media (max-width: @mobile-width-only) {
+    padding: 39px 0 22px;
+    background-color: @gray;
   }
 }
 
@@ -29,7 +29,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 0 30px;
+    padding: 57px 30px 55px;
   }
 
   @media (min-width: @desktop-width) {
@@ -45,5 +45,10 @@
   @media (min-width: @tablet-width) {
     padding: 0;
     margin: 0;
+    margin-right: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 28px;
   }
 }
