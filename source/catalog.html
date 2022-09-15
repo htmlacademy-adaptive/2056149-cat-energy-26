@@ -32,16 +32,16 @@
             </a>
             <button class="main-nav__toggle" type="button">
               <span class="visually-hidden">Открыть меню</span>
-              <svg class="main-nav__toggle-icon" width="24" height="18">
+              <svg class="main-nav__toggle-icon main-nav__toggle-icon--js" width="24" height="18">
                 <use xlink:href="./img/sprite.svg#icon-toggle"></use>
               </svg>
-              <svg class="main-nav__toggle-close-icon" width="20" height="20">
+              <svg class="main-nav__toggle-close-icon main-nav__toggle-close-icon--js-open" width="20" height="20">
                 <use xlink:href="./img/sprite.svg#icon-toggle-close"></use>
               </svg>
             </button>
           </div>
         </div>
-        <ul class="main-nav__list site-list">
+        <ul class="main-nav__list site-list site-list--js site-list--js-open">
           <li class="site-list__item">
             <a class="site-list__item-link" href="index.html">Главная</a>
           </li>
@@ -63,179 +63,207 @@
         <ul class="catalog__list">
           <li class="catalog__item product">
             <div class="product__wrapper">
-              <picture>
-                <source media="(min-width: 768px)" srcset="./img/catalog/catalog-chicken-small-tablet.png">
-                <img class="product__image product__image--first" src="./img/catalog/catalog-chicken-small.png"
-                  alt="Питание для котов со вкусом курицы 500 грамм.">
-              </picture>
-              <table class="product__table">
-                <caption class="product__name">Cat Energy PRO 500 г</caption>
-                <tr class="product__description-wrapper">
-                  <td class="product__description-item">Масса</td>
-                  <td class="product__description-item">500 г</td>
-                </tr>
-                <tr class="product__description-wrapper">
-                  <td class="product__description-item">Вкус</td>
-                  <td class="product__description-item">Курица</td>
-                </tr>
-                <tr class="product__description-wrapper">
-                  <td class="product__description-item">Цена</td>
-                  <td class="product__description-item">700 Р.</td>
-                </tr>
-              </table>
+              <a class="product__picture" href="#">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="./img/catalog/catalog-chicken-small-tablet.png">
+                  <img class="product__image product__image--first" src="./img/catalog/catalog-chicken-small.png"
+                    alt="Питание для котов со вкусом курицы 500 грамм.">
+                </picture>
+              </a>
+              <div class="product__table-wrapper">
+                <a class="product__name">Cat Energy PRO 500 г</a>
+                <table class="product__table">
+                  <tr class="product__description-wrapper">
+                    <td class="product__description-item">Масса</td>
+                    <td class="product__description-item">500 г</td>
+                  </tr>
+                  <tr class="product__description-wrapper">
+                    <td class="product__description-item">Вкус</td>
+                    <td class="product__description-item">Курица</td>
+                  </tr>
+                  <tr class="product__description-wrapper">
+                    <td class="product__description-item">Цена</td>
+                    <td class="product__description-item">700 Р.</td>
+                  </tr>
+                </table>
+              </div>
             </div>
             <a class="product__button" href="#">Заказать</a>
           </li>
           <li class="catalog__item product">
             <div class="product__wrapper">
-              <picture>
-                <source media="(min-width: 1440px)" srcset="./img/catalog/catalog-chicken-big-desktop.png">
-                <source media="(min-width: 768px)" srcset="./img/catalog/catalog-chicken-big-tablet.png">
-                <img class="product__image product__image--second" src="./img/catalog/catalog-chicken-big.png"
-                  alt="Питание для котов со вкусом курицы 1000 грамм.">
-              </picture>
-              <table class="product__table">
-                <caption class="product__name">Cat Energy PRO 1000 г</caption>
-                <tr class="product__description-wrapper">
-                  <td class="product__description-item">Масса</td>
-                  <td class="product__description-item">1000 г</td>
-                </tr>
-                <tr class="product__description-wrapper">
-                  <td class="product__description-item">Вкус</td>
-                  <td class="product__description-item">Курица</td>
-                </tr>
-                <tr class="product__description-wrapper">
-                  <td class="product__description-item">Цена</td>
-                  <td class="product__description-item">1000 Р.</td>
-                </tr>
-              </table>
+              <a class="product__picture" href="#">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="./img/catalog/catalog-chicken-big-desktop.png">
+                  <source media="(min-width: 768px)" srcset="./img/catalog/catalog-chicken-big-tablet.png">
+                  <img class="product__image product__image--second" src="./img/catalog/catalog-chicken-big.png"
+                    alt="Питание для котов со вкусом курицы 1000 грамм.">
+                </picture>
+              </a>
+              <div class="product__table-wrapper">
+                <a class="product__name">Cat Energy PRO 1000 г</a>
+                <table class="product__table">
+                  <tr class="product__description-wrapper">
+                    <td class="product__description-item">Масса</td>
+                    <td class="product__description-item">1000 г</td>
+                  </tr>
+                  <tr class="product__description-wrapper">
+                    <td class="product__description-item">Вкус</td>
+                    <td class="product__description-item">Курица</td>
+                  </tr>
+                  <tr class="product__description-wrapper">
+                    <td class="product__description-item">Цена</td>
+                    <td class="product__description-item">1000 Р.</td>
+                  </tr>
+                </table>
+              </div>
             </div>
             <a class="product__button" href="#">Заказать</a>
           </li>
           <li class="catalog__item product">
             <div class="product__wrapper">
-              <picture>
-                <source media="(min-width: 768px)" srcset="./img/catalog/catalog-fish-small-tablet.png">
-                <img class="product__image product__image--third" src="./img/catalog/catalog-fish-small.png"
-                  alt="Питание для котов со вкусом рыбы 500 грамм.">
-              </picture>
-              <table class="product__table">
-                <caption class="product__name">Cat Energy PRO 500 г</caption>
-                <tr class="product__description-wrapper">
-                  <td class="product__description-item">Масса</td>
-                  <td class="product__description-item">500 г</td>
-                </tr>
-                <tr class="product__description-wrapper">
-                  <td class="product__description-item">Вкус</td>
-                  <td class="product__description-item">Раба</td>
-                </tr>
-                <tr class="product__description-wrapper">
-                  <td class="product__description-item">Цена</td>
-                  <td class="product__description-item">700 Р.</td>
-                </tr>
-              </table>
+              <a class="product__picture" href="#">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="./img/catalog/catalog-fish-small-tablet.png">
+                  <img class="product__image product__image--third" src="./img/catalog/catalog-fish-small.png"
+                    alt="Питание для котов со вкусом рыбы 500 грамм.">
+                </picture>
+              </a>
+              <div class="product__table-wrapper">
+                <a class="product__name">Cat Energy PRO 500 г</a>
+                <table class="product__table">
+                  <tr class="product__description-wrapper">
+                    <td class="product__description-item">Масса</td>
+                    <td class="product__description-item">500 г</td>
+                  </tr>
+                  <tr class="product__description-wrapper">
+                    <td class="product__description-item">Вкус</td>
+                    <td class="product__description-item">Раба</td>
+                  </tr>
+                  <tr class="product__description-wrapper">
+                    <td class="product__description-item">Цена</td>
+                    <td class="product__description-item">700 Р.</td>
+                  </tr>
+                </table>
+              </div>
             </div>
             <a class="product__button" href="#">Заказать</a>
           </li>
           <li class="catalog__item product">
             <div class="product__wrapper">
-              <picture>
-                <source media="(min-width: 1440px)" srcset="./img/catalog/catalog-fish-big-desktop.png">
-                <source media="(min-width: 768px)" srcset="./img/catalog/catalog-fish-big-tablet.png">
-                <img class="product__image product__image--fourth" src="./img/catalog/catalog-fish-big.png"
-                  alt="Питание для котов со вкусом рыбы 1000 грамм.">
-              </picture>
-              <table class="product__table">
-                <caption class="product__name">Cat Energy PRO 1000 г</caption>
-                <tr class="product__description-wrapper">
-                  <td class="product__description-item">Масса</td>
-                  <td class="product__description-item">1000 г</td>
-                </tr>
-                <tr class="product__description-wrapper">
-                  <td class="product__description-item">Вкус</td>
-                  <td class="product__description-item">Раба</td>
-                </tr>
-                <tr class="product__description-wrapper">
-                  <td class="product__description-item">Цена</td>
-                  <td class="product__description-item">1000 Р.</td>
-                </tr>
-              </table>
+              <a class="product__picture" href="#">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="./img/catalog/catalog-fish-big-desktop.png">
+                  <source media="(min-width: 768px)" srcset="./img/catalog/catalog-fish-big-tablet.png">
+                  <img class="product__image product__image--fourth" src="./img/catalog/catalog-fish-big.png"
+                    alt="Питание для котов со вкусом рыбы 1000 грамм.">
+                </picture>
+              </a>
+              <div class="product__table-wrapper">
+                <a class="product__name">Cat Energy PRO 1000 г</a>
+                <table class="product__table">
+                  <tr class="product__description-wrapper">
+                    <td class="product__description-item">Масса</td>
+                    <td class="product__description-item">1000 г</td>
+                  </tr>
+                  <tr class="product__description-wrapper">
+                    <td class="product__description-item">Вкус</td>
+                    <td class="product__description-item">Раба</td>
+                  </tr>
+                  <tr class="product__description-wrapper">
+                    <td class="product__description-item">Цена</td>
+                    <td class="product__description-item">1000 Р.</td>
+                  </tr>
+                </table>
+              </div>
             </div>
             <a class="product__button" href="#">Заказать</a>
           </li>
           <li class="catalog__item product">
             <div class="product__wrapper">
-              <picture>
-                <source media="(min-width: 768px)" srcset="./img/catalog/catalog-buckwheat-small-tablet.png">
-                <img class="product__image product__image--fifth" src="./img/catalog/catalog-buckwheat-small.png"
-                  alt="Питание для котов со вкусом гречки 500 грамм.">
-              </picture>
-              <table class="product__table">
-                <caption class="product__name">Cat Energy SLIM 500 г</caption>
-                <tr class="product__description-wrapper">
-                  <td class="product__description-item">Масса</td>
-                  <td class="product__description-item">500 г</td>
-                </tr>
-                <tr class="product__description-wrapper">
-                  <td class="product__description-item">Вкус</td>
-                  <td class="product__description-item">Гречка</td>
-                </tr>
-                <tr class="product__description-wrapper">
-                  <td class="product__description-item">Цена</td>
-                  <td class="product__description-item">400 Р.</td>
-                </tr>
-              </table>
+              <a class="product__picture" href="#">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="./img/catalog/catalog-buckwheat-small-tablet.png">
+                  <img class="product__image product__image--fifth" src="./img/catalog/catalog-buckwheat-small.png"
+                    alt="Питание для котов со вкусом гречки 500 грамм.">
+                </picture>
+              </a>
+              <div class="product__table-wrapper">
+                <a class="product__name">Cat Energy SLIM 500 г</a>
+                <table class="product__table">
+                  <tr class="product__description-wrapper">
+                    <td class="product__description-item">Масса</td>
+                    <td class="product__description-item">500 г</td>
+                  </tr>
+                  <tr class="product__description-wrapper">
+                    <td class="product__description-item">Вкус</td>
+                    <td class="product__description-item">Гречка</td>
+                  </tr>
+                  <tr class="product__description-wrapper">
+                    <td class="product__description-item">Цена</td>
+                    <td class="product__description-item">400 Р.</td>
+                  </tr>
+                </table>
+              </div>
             </div>
             <a class="product__button" href="#">Заказать</a>
           </li>
           <li class="catalog__item product">
             <div class="product__wrapper">
-              <picture>
-                <source media="(min-width: 1440px)" srcset="./img/catalog/catalog-buckwheat-big-desktop.png">
-                <source media="(min-width: 768px)" srcset="./img/catalog/catalog-buckwheat-big-tablet.png">
-                <img class="product__image product__image--sixth" src="./img/catalog/catalog-buckwheat-big.png"
-                  alt="Питание для котов со вкусом гречки 1000 грамм.">
-              </picture>
-              <table class="product__table">
-                <caption class="product__name">Cat Energy SLIM 1000 г</caption>
-                <tr class="product__description-wrapper">
-                  <td class="product__description-item">Масса</td>
-                  <td class="product__description-item">1000 г</td>
-                </tr>
-                <tr class="product__description-wrapper">
-                  <td class="product__description-item">Вкус</td>
-                  <td class="product__description-item">Гречка</td>
-                </tr>
-                <tr class="product__description-wrapper">
-                  <td class="product__description-item">Цена</td>
-                  <td class="product__description-item">700 Р.</td>
-                </tr>
-              </table>
+              <a class="product__picture" href="#">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="./img/catalog/catalog-buckwheat-big-desktop.png">
+                  <source media="(min-width: 768px)" srcset="./img/catalog/catalog-buckwheat-big-tablet.png">
+                  <img class="product__image product__image--sixth" src="./img/catalog/catalog-buckwheat-big.png"
+                    alt="Питание для котов со вкусом гречки 1000 грамм.">
+                </picture>
+              </a>
+              <div class="product__table-wrapper">
+                <a class="product__name">Cat Energy SLIM 1000 г</a>
+                <table class="product__table">
+                  <tr class="product__description-wrapper">
+                    <td class="product__description-item">Масса</td>
+                    <td class="product__description-item">1000 г</td>
+                  </tr>
+                  <tr class="product__description-wrapper">
+                    <td class="product__description-item">Вкус</td>
+                    <td class="product__description-item">Гречка</td>
+                  </tr>
+                  <tr class="product__description-wrapper">
+                    <td class="product__description-item">Цена</td>
+                    <td class="product__description-item">700 Р.</td>
+                  </tr>
+                </table>
+              </div>
             </div>
             <a class="product__button" href="#">Заказать</a>
           </li>
           <li class="catalog__item product">
             <div class="product__wrapper">
-              <picture>
-                <source media="(min-width: 768px)" srcset="./img/catalog/catalog-rice-small-tablet.png">
-                <img class="product__image product__image--seventh" src="./img/catalog/catalog-rice-small.png"
-                  alt="Питание для котов со вкусом риса 500 грамм.">
-              </picture>
-              <table class="product__table">
-                <caption class="product__name">Cat Energy SLIM 500 г</caption>
-                <tr class="product__description-wrapper">
-                  <td class="product__description-item">Масса</td>
-                  <td class="product__description-item">500 г</td>
-                </tr>
-                <tr class="product__description-wrapper">
-                  <td class="product__description-item">Вкус</td>
-                  <td class="product__description-item">Рис</td>
-                </tr>
-                <tr class="product__description-wrapper">
-                  <td class="product__description-item">Цена</td>
-                  <td class="product__description-item">500 Р.</td>
-                </tr>
-              </table>
+              <a class="product__picture" href="#">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="./img/catalog/catalog-rice-small-tablet.png">
+                  <img class="product__image product__image--seventh" src="./img/catalog/catalog-rice-small.png"
+                    alt="Питание для котов со вкусом риса 500 грамм.">
+                </picture>
+              </a>
+              <div class="product__table-wrapper">
+                <a class="product__name">Cat Energy SLIM 500 г</a>
+                <table class="product__table">
+                  <tr class="product__description-wrapper">
+                    <td class="product__description-item">Масса</td>
+                    <td class="product__description-item">500 г</td>
+                  </tr>
+                  <tr class="product__description-wrapper">
+                    <td class="product__description-item">Вкус</td>
+                    <td class="product__description-item">Рис</td>
+                  </tr>
+                  <tr class="product__description-wrapper">
+                    <td class="product__description-item">Цена</td>
+                    <td class="product__description-item">500 Р.</td>
+                  </tr>
+                </table>
+              </div>
             </div>
             <a class="product__button" href="#">Заказать</a>
           </li>
@@ -250,6 +278,7 @@
     </section>
     <section class="extra">
       <div class="extra__wrapper">
+        <div class="title-line"></div>
         <h2 class="extra__title">Дополнительные товары</h2>
         <div class="extra__container">
           <ul class="extra__list">
@@ -261,7 +290,7 @@
                   <p class="extra-product__description-item">200 Р.</p>
                 </div>
               </div>
-              <button class="extra-product__button" type="button">Заказать</button>
+              <a class="extra-product__button" href="#">Заказать</a>
             </li>
             <li class="extra__item extra-product">
               <div class="extra-product__wrapper">
@@ -271,7 +300,7 @@
                   <p class="extra-product__description-item">50 Р.</p>
                 </div>
               </div>
-              <button class="extra-product__button" type="button">Заказать</button>
+              <a class="extra-product__button" href="#">Заказать</a>
             </li>
             <li class="extra__item extra-product">
               <div class="extra-product__wrapper">
@@ -281,7 +310,7 @@
                   <p class="extra-product__description-item">100 Р.</p>
                 </div>
               </div>
-              <button class="extra-product__button" type="button">Заказать</button>
+              <a class="extra-product__button" href="#">Заказать</a>
             </li>
             <li class="extra__item extra-product">
               <div class="extra-product__wrapper">
@@ -291,7 +320,7 @@
                   <p class="extra-product__description-item">300 Р.</p>
                 </div>
               </div>
-              <button class="extra-product__button" type="button">Заказать</button>
+              <a class="extra-product__button" href="#">Заказать</a>
             </li>
           </ul>
           <div class="extra__gift gift">

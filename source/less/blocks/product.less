@@ -119,17 +119,23 @@
   }
 }
 
+.product__table-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .product__name {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: @dark-grey-2;
   margin-bottom: 12px;
-  padding-right: 66px;
   text-align: left;
+  width: 76px;
 
   &--order {
-    margin: 0;
+    width: 204px;
+    margin: 0 auto;
     padding: 0;
     margin-bottom: 8px;
     text-align: center;
