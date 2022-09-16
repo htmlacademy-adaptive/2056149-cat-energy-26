@@ -32,16 +32,16 @@
             </a>
             <button class="main-nav__toggle" type="button">
               <span class="visually-hidden">Открыть меню</span>
-              <svg class="main-nav__toggle-icon" width="24" height="18">
+              <svg class="main-nav__toggle-icon main-nav__toggle-icon--js" width="24" height="18">
                 <use xlink:href="./img/sprite.svg#icon-toggle"></use>
               </svg>
-              <svg class="main-nav__toggle-close-icon" width="20" height="20">
+              <svg class="main-nav__toggle-close-icon main-nav__toggle-close-icon--js-open" width="20" height="20">
                 <use xlink:href="./img/sprite.svg#icon-toggle-close"></use>
               </svg>
             </button>
           </div>
         </div>
-        <ul class="main-nav__list site-list">
+        <ul class="main-nav__list site-list site-list--js site-list--js-open" >
           <li class="site-list__item">
             <a class="site-list__item-link" href="index.html">Главная</a>
           </li>
@@ -120,7 +120,7 @@
           <h3 class="program__title program__title--textarea">Комментарий</h3>
           <fieldset class="program__fieldset">
             <label class="program__label">
-              <textarea class="program__textarea" name="comment">Расскажите обо всех повадках кота</textarea>
+              <textarea class="program__textarea" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
             </label>
           </fieldset>
           <h3 class="program__title program__title--checkbox">Дополнительно</h3>
