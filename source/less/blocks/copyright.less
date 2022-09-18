@@ -1,4 +1,9 @@
-.copyright__link-wrapper {
+.copyright__link {
+  font-family: @arial;
+  font-size: 16px;
+  line-height: 0;
+  color: @dark-grey;
+  text-decoration: none;
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -9,12 +14,24 @@
     padding: 0;
     margin: 0;
   }
-}
 
-.copyright__link {
-  font-family: @arial;
-  font-size: 16px;
-  line-height: 0;
-  color: @dark-grey;
-  text-decoration: none;
+  &:hover {
+    .copyright__icon {
+      color: @green-4;
+    }
+  }
+
+  &:focus {
+    .copyright__icon {
+      color: @green-4;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    .copyright__icon {
+      color: @green-4;
+    }
+  }
 }

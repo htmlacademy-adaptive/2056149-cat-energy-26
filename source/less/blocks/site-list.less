@@ -66,10 +66,23 @@
 .site-list__item-link {
   text-decoration: none;
   color: @black;
+  cursor: pointer;
 
   @media (min-width: @desktop-width) {
     &--background {
       color: @white;
     }
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+
+  &:disabled {
+    opacity: 0.6;
   }
 }
