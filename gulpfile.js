@@ -22,7 +22,7 @@ export const styles = () => {
       autoprefixer(),
       csso()
     ]))
-    .pipe(rename('style.min.css'))
+    // .pipe(rename('style.min.css'))
     .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
@@ -37,7 +37,7 @@ const html = () => {
 // Scripts
 
 const scripts = () => {
-  return gulp.src('source/js/script.js')
+  return gulp.src('source/js/*.js')
     .pipe(gulp.dest('build/js'))
     .pipe(browser.stream());
 }
