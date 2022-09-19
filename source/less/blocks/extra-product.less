@@ -1,5 +1,5 @@
 .extra-product {
-  border-bottom: 1px solid @special-grey;
+  border-top: 1px solid @special-grey;
   padding: 13px 0 18px;
 
   @media (min-width: @tablet-width) {
@@ -94,6 +94,19 @@
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
+
+  &:hover {
+    background-color: @green-2;
+  }
+
+  &:focus {
+    background-color: @green-2;
+  }
+
+  &:active {
+    background-color: @green-2;
+    color: @white-opacity;
+  }
 
   @media (min-width: @tablet-width) {
     width: 632px;

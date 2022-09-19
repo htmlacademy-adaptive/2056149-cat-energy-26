@@ -132,6 +132,21 @@
   margin-bottom: 12px;
   text-align: left;
   width: 76px;
+  text-decoration: none;
+  display: inline-block;
+
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &:focus {
+    opacity: 0.9;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
 
   &--order {
     width: 204px;
@@ -139,6 +154,18 @@
     padding: 0;
     margin-bottom: 8px;
     text-align: center;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:focus {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 1;
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -213,9 +240,35 @@
   text-decoration: none;
   text-transform: uppercase;
 
+  &:hover {
+    background-color: @green-2;
+  }
+
+  &:focus {
+    background-color: @green-2;
+  }
+
+  &:active {
+    background-color: @green-2;
+    color: @white-opacity;
+  }
+
   &--order {
     background-color: @gray;
     color: @dark-grey;
+
+    &:hover {
+      background-color: @special-grey-2;
+    }
+
+    &:focus {
+      background-color: @special-grey-2;
+    }
+
+    &:active {
+      background-color: @special-grey-2;
+      color: @dark-grey-opacity;
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -224,5 +277,19 @@
 
   @media (min-width: @desktop-width) {
     width: 168px;
+  }
+}
+
+.product__picture {
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &:focus {
+    opacity: 0.9;
+  }
+
+  &:active {
+    opacity: 0.8;
   }
 }

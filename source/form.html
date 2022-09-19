@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Интернет-магазин «Кэт энерджи»</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
@@ -41,7 +41,7 @@
             </button>
           </div>
         </div>
-        <ul class="main-nav__list site-list site-list--js site-list--js-open" >
+        <ul class="main-nav__list site-list site-list--js site-list--js-open">
           <li class="site-list__item">
             <a class="site-list__item-link" href="index.html">Главная</a>
           </li>
@@ -98,31 +98,52 @@
               </fieldset>
             </div>
           </div>
-          <h3 class="program__title">Контактные данные (владельца кота)</h3>
-          <fieldset class="program__fieldset">
+          <div class="program__title-container">
+            <div class="program__title-wrapper"></div>
+          </div>
+          <div class="program__title-container-left">
+            <div class="program__title-wrapper-left"></div>
+          </div>
+            <h3 class="program__title">Контактные данные (владельца кота)</h3>
+          <fieldset class="program__fieldset program__fieldset--contacts">
             <div class="program__contacts-wrapper">
               <label class="program__label">
                 <span class="program__text">E-mail:*</span>
-                <input class="program__input program__input--email" type="email" name="email" value="kuklachev@gmail.com" required>
+                <input class="program__input program__input--email" type="email" name="email"
+                  value="kuklachev@gmail.com" required>
                 <svg class="program__icon program__icon--email" width="19" height="14">
                   <use xlink:href="./img/sprite.svg#icon-email"></use>
                 </svg>
               </label>
               <label class="program__label">
                 <span class="program__text">Телефон:*</span>
-                <input class="program__input program__input--phone" type="tel" name="phone" value="8 (960) 900-60-90" required>
+                <input class="program__input program__input--phone" type="tel" name="phone" value="8 (960) 900-60-90"
+                  required>
                 <svg class="program__icon program__icon--phone" width="20" height="21">
                   <use xlink:href="./img/sprite.svg#icon-phone"></use>
                 </svg>
               </label>
             </div>
           </fieldset>
-          <h3 class="program__title program__title--textarea">Комментарий</h3>
+          <div class="program__title-container program__title-container--textarea">
+            <div class="program__title-wrapper program__title-wrapper--textarea"></div>
+          </div>
+          <div class="program__title-container-left program__title-container-left--textarea">
+            <div class="program__title-wrapper-left program__title-wrapper-left--textarea"></div>
+          </div>
+            <h3 class="program__title program__title--textarea">Комментарий</h3>
           <fieldset class="program__fieldset">
             <label class="program__label">
-              <textarea class="program__textarea" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+              <textarea class="program__textarea" name="comment"
+                placeholder="Расскажите обо всех повадках кота"></textarea>
             </label>
           </fieldset>
+          <div class="program__title-container program__title-container--checkbox">
+            <div class="program__title-wrapper program__title-wrapper--checkbox"></div>
+          </div>
+          <div class="program__title-container-left program__title-container-left--checkbox">
+            <div class="program__title-wrapper-left program__title-wrapper-left--checkbox"></div>
+          </div>
           <h3 class="program__title program__title--checkbox">Дополнительно</h3>
           <fieldset class="program__fieldset program__fieldset--choice">
             <div class="program__checkbox-wrapper">
@@ -191,7 +212,7 @@
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Мы в Вконтакте</span>
-                <svg class="main-nav__social-icon" width="28" height="22">
+                <svg class="social__icon" width="28" height="22">
                   <use xlink:href="./img/sprite.svg#icon-vkontakte"></use>
                 </svg>
               </a>
@@ -199,7 +220,7 @@
             <li class="social__item">
               <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Мы в Ютубе</span>
-                <svg class="main-nav__social-icon" width="28" height="22">
+                <svg class="social__icon" width="28" height="22">
                   <use xlink:href="./img/sprite.svg#icon-youtube"></use>
                 </svg>
               </a>
@@ -207,7 +228,7 @@
             <li class="social__item">
               <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Мы в Телеграме</span>
-                <svg class="main-nav__social-icon" width="28" height="22">
+                <svg class="social__icon" width="28" height="22">
                   <use xlink:href="./img/sprite.svg#icon-telegram"></use>
                 </svg>
               </a>
@@ -215,15 +236,11 @@
           </ul>
         </div>
         <div class="main-footer__copyright copyright">
-          <div class="copyright__link-wrapper">
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <span class="visually-hidden">Логотип HTML Academy</span>
-              <svg class="copyright__icon" width="27" height="34">
-                <use xlink:href="./img/sprite.svg#icon-copyright"></use>
-              </svg>
-            </a>
-          </div>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+            <svg class="copyright__icon" width="27" height="34">
+              <use xlink:href="./img/sprite.svg#icon-copyright"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </div>
