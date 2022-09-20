@@ -4,17 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="«Кэт энерджи» — интернет-магазин, который поможет подобрать и заказать питание для вашего кота.">
+  <meta name="description"
+    content="«Кэт энерджи» — интернет-магазин, который поможет подобрать и заказать питание для вашего кота.">
   <title>Интернет-магазин «Кэт энерджи»</title>
   <link rel="stylesheet" href="./css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="preload" href="./css/style.min.css" as="style" crossorigin="anonymous">
-  <link rel="preload" href="./fonts/oswaldmedium.woff" as="font" crossorigin="anonymous">
   <link rel="preload" href="./fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="./fonts/oswaldregular.woff" as="font" crossorigin="anonymous">
   <link rel="preload" href="./fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
 </head>
 
@@ -71,8 +69,14 @@
             <div class="product__wrapper">
               <a class="product__picture" href="#">
                 <picture>
-                  <source media="(min-width: 768px)" srcset="./img/catalog/catalog-chicken-small-tablet.png">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="./img/catalog/catalog-chicken-small-tablet.webp 1x, ./img/catalog/catalog-chicken-small-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="./img/catalog/catalog-chicken-small.webp 1x, ./img/catalog/catalog-chicken-small@2x.webp 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="./img/catalog/catalog-chicken-small-tablet.png 1x, ./img/catalog/catalog-chicken-small-tablet@2x.png 2x">
                   <img class="product__image product__image--first" src="./img/catalog/catalog-chicken-small.png"
+                    srcset="./img/catalog/catalog-chicken-small@2x.png 2x"
                     alt="Питание для котов со вкусом курицы 500 грамм.">
                 </picture>
               </a>
@@ -100,9 +104,18 @@
             <div class="product__wrapper">
               <a class="product__picture" href="#">
                 <picture>
-                  <source media="(min-width: 1440px)" srcset="./img/catalog/catalog-chicken-big-desktop.png">
-                  <source media="(min-width: 768px)" srcset="./img/catalog/catalog-chicken-big-tablet.png">
+                  <source type="image/webp" media="(min-width: 1440px)"
+                    srcset="./img/catalog/catalog-chicken-big-desktop.webp 1x, ./img/catalog/catalog-chicken-big-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="./img/catalog/catalog-chicken-big-tablet.webp 1x, ./img/catalog/catalog-chicken-big-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="./img/catalog/catalog-chicken-big.webp 1x, ./img/catalog/catalog-chicken-big@2x.webp 2x">
+                  <source media="(min-width: 1440px)"
+                    srcset="./img/catalog/catalog-chicken-big-desktop.png 1x, ./img/catalog/catalog-chicken-big-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="./img/catalog/catalog-chicken-big-tablet.png 1x, ./img/catalog/catalog-chicken-big-tablet@2x.png 2x">
                   <img class="product__image product__image--second" src="./img/catalog/catalog-chicken-big.png"
+                    srcset="./img/catalog/catalog-chicken-big@2x.png 2x"
                     alt="Питание для котов со вкусом курицы 1000 грамм.">
                 </picture>
               </a>
@@ -130,8 +143,14 @@
             <div class="product__wrapper">
               <a class="product__picture" href="#">
                 <picture>
-                  <source media="(min-width: 768px)" srcset="./img/catalog/catalog-fish-small-tablet.png">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="./img/catalog/catalog-fish-small-tablet.webp 1x, ./img/catalog/catalog-fish-small-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="./img/catalog/catalog-fish-small.webp 1x, ./img/catalog/catalog-fish-small@2x.webp 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="./img/catalog/catalog-fish-small-tablet.png 1x, ./img/catalog/catalog-fish-small-tablet@2x.png 2x">
                   <img class="product__image product__image--third" src="./img/catalog/catalog-fish-small.png"
+                    srcset="./img/catalog/catalog-fish-small@2x.png 2x"
                     alt="Питание для котов со вкусом рыбы 500 грамм.">
                 </picture>
               </a>
@@ -159,9 +178,18 @@
             <div class="product__wrapper">
               <a class="product__picture" href="#">
                 <picture>
-                  <source media="(min-width: 1440px)" srcset="./img/catalog/catalog-fish-big-desktop.png">
-                  <source media="(min-width: 768px)" srcset="./img/catalog/catalog-fish-big-tablet.png">
+                  <source type="image/webp" media="(min-width: 1440px)"
+                    srcset="./img/catalog/catalog-fish-big-desktop.webp 1x, ./img/catalog/catalog-fish-big-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="./img/catalog/catalog-fish-big-tablet.webp 1x, ./img/catalog/catalog-fish-big-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="./img/catalog/catalog-fish-big.webp 1x, ./img/catalog/catalog-fish-big@2x.webp 2x">
+                  <source media="(min-width: 1440px)"
+                    srcset="./img/catalog/catalog-fish-big-desktop.png 1x, ./img/catalog/catalog-fish-big-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="./img/catalog/catalog-fish-big-tablet.png 1x, ./img/catalog/catalog-fish-big-tablet@2x.png 2x">
                   <img class="product__image product__image--fourth" src="./img/catalog/catalog-fish-big.png"
+                    srcset="./img/catalog/catalog-fish-big@2x.png 2x"
                     alt="Питание для котов со вкусом рыбы 1000 грамм.">
                 </picture>
               </a>
@@ -189,8 +217,14 @@
             <div class="product__wrapper">
               <a class="product__picture" href="#">
                 <picture>
-                  <source media="(min-width: 768px)" srcset="./img/catalog/catalog-buckwheat-small-tablet.png">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="./img/catalog/catalog-buckwheat-small-tablet.webp 1x, ./img/catalog/catalog-buckwheat-small-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="./img/catalog/catalog-buckwheat-small.webp 1x, ./img/catalog/catalog-buckwheat-small@2x.webp 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="./img/catalog/catalog-buckwheat-small-tablet.png 1x, ./img/catalog/catalog-buckwheat-small-tablet@2x.png 2x">
                   <img class="product__image product__image--fifth" src="./img/catalog/catalog-buckwheat-small.png"
+                    srcset="./img/catalog/catalog-buckwheat-small@2x.png 2x"
                     alt="Питание для котов со вкусом гречки 500 грамм.">
                 </picture>
               </a>
@@ -218,9 +252,18 @@
             <div class="product__wrapper">
               <a class="product__picture" href="#">
                 <picture>
-                  <source media="(min-width: 1440px)" srcset="./img/catalog/catalog-buckwheat-big-desktop.png">
-                  <source media="(min-width: 768px)" srcset="./img/catalog/catalog-buckwheat-big-tablet.png">
+                  <source type="image/webp" media="(min-width: 1440px)"
+                    srcset="./img/catalog/catalog-buckwheat-big-desktop.webp 1x, ./img/catalog/catalog-buckwheat-big-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="./img/catalog/catalog-buckwheat-big-tablet.webp 1x, ./img/catalog/catalog-buckwheat-big-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="./img/catalog/catalog-buckwheat-big.webp 1x, ./img/catalog/catalog-buckwheat-big@2x.webp 2x">
+                  <source media="(min-width: 1440px)"
+                    srcset="./img/catalog/catalog-buckwheat-big-desktop.png 1x, ./img/catalog/catalog-buckwheat-big-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="./img/catalog/catalog-buckwheat-big-tablet.png 1x, ./img/catalog/catalog-buckwheat-big-tablet@2x.png 2x">
                   <img class="product__image product__image--sixth" src="./img/catalog/catalog-buckwheat-big.png"
+                    srcset="./img/catalog/catalog-buckwheat-big@2x.png 2x"
                     alt="Питание для котов со вкусом гречки 1000 грамм.">
                 </picture>
               </a>
@@ -248,8 +291,14 @@
             <div class="product__wrapper">
               <a class="product__picture" href="#">
                 <picture>
-                  <source media="(min-width: 768px)" srcset="./img/catalog/catalog-rice-small-tablet.png">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="./img/catalog/catalog-rice-small-tablet.webp 1x, ./img/catalog/catalog-rice-small-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="./img/catalog/catalog-rice-small.webp 1x, ./img/catalog/catalog-rice-small@2x.webp 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="./img/catalog/catalog-rice-small-tablet.png 1x, ./img/catalog/catalog-rice-small-tablet@2x.png 2x">
                   <img class="product__image product__image--seventh" src="./img/catalog/catalog-rice-small.png"
+                    srcset="./img/catalog/catalog-rice-small@2x.png 2x"
                     alt="Питание для котов со вкусом риса 500 грамм.">
                 </picture>
               </a>
@@ -290,7 +339,7 @@
           <ul class="extra__list">
             <li class="extra__item extra-product">
               <div class="extra-product__wrapper">
-                <h3 class="extra-product__name" href="#">Сахарозаменитель</h3>
+                <h3 class="extra-product__name">Сахарозаменитель</h3>
                 <div class="extra-product__description-wrapper">
                   <p class="extra-product__description-item">1 упаковка (100 г)</p>
                   <p class="extra-product__description-item">200 Р.</p>
@@ -300,7 +349,7 @@
             </li>
             <li class="extra__item extra-product">
               <div class="extra-product__wrapper">
-                <h3 class="extra-product__name" href="#">Питьевая вода</h3>
+                <h3 class="extra-product__name">Питьевая вода</h3>
                 <div class="extra-product__description-wrapper">
                   <p class="extra-product__description-item">5 литров</p>
                   <p class="extra-product__description-item">50 Р.</p>
@@ -310,7 +359,7 @@
             </li>
             <li class="extra__item extra-product">
               <div class="extra-product__wrapper">
-                <h3 class="extra-product__name" href="#">Молоко</h3>
+                <h3 class="extra-product__name">Молоко</h3>
                 <div class="extra-product__description-wrapper">
                   <p class="extra-product__description-item">1 литр</p>
                   <p class="extra-product__description-item">100 Р.</p>
