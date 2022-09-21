@@ -2,12 +2,15 @@
   display: grid;
   gap: 24px;
   grid-template-columns: 28px 28px 28px;
+  grid-template-rows: 22px;
   list-style-type: none;
-  padding: 18px 74px 14px;
+  padding: 20px 74px 21px;
   margin: 0;
-  line-height: -1px;
   border-top: 1px solid @special-grey-4;
   border-bottom: 1px solid @special-grey-4;
+  align-items: center;
+  justify-items: center;
+
 
   @media (min-width: @tablet-width) {
     padding: 0;
@@ -15,8 +18,17 @@
   }
 }
 
+.social__link {
+  display: inline-block;
+}
+
+.social__item {
+  line-height: 0;
+}
+
 .social__icon {
   color: @special-grey-3;
+  vertical-align: middle;
 
   &:hover {
     color: @green-4;

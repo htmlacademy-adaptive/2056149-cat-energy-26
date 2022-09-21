@@ -36,8 +36,13 @@
   text-transform: uppercase;
   list-style: none;
   text-align: center;
-  border-bottom: 1px solid @special-white-2;
   padding: 22px 0 24px;
+
+  @media (max-width: @mobile-width-only) {
+    &:not(:last-child) {
+      border-bottom: 1px solid @special-white-2;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     border: none;
