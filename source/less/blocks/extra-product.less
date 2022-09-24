@@ -2,14 +2,22 @@
   border-top: 1px solid @special-grey;
   padding: 13px 0 18px;
 
+  &--padding {
+    padding-top: 12px;
+  }
+
   @media (min-width: @tablet-width) {
     margin: 0;
-    padding: 25px 38px 28px;
+    padding: 25px 38px 27px;
+
+    &--padding {
+      padding-top: 26px;
+    }
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
-    padding: 15px 0 17px;
+    padding: 15px 0 16px;
     width: 894px;
     justify-content: space-between;
   }
@@ -20,6 +28,10 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
+
+    &--margin {
+      margin-bottom: 26px;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -59,13 +71,13 @@
     gap: 51px;
     justify-items: end;
     justify-content: end;
+    transform: translateY(5px);
   }
 
   @media (min-width: @desktop-width) {
     justify-content: space-between;
     justify-items: start;
     width: 288px;
-    margin-top: 8px;
   }
 }
 
