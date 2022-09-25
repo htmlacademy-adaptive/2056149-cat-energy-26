@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="«Кэт энерджи» — интернет-магазин, который поможет подобрать и заказать питание для вашего кота.">
+  <meta name="description"
+    content="«Кэт энерджи» — интернет-магазин, который поможет подобрать и заказать питание для вашего кота.">
   <title>Интернет-магазин «Кэт энерджи»</title>
   <link rel="stylesheet" href="./css/style.min.css">
   <link rel="icon" href="favicon.ico">
@@ -21,38 +22,42 @@
       <nav class="main-nav">
         <div class="main-nav__logo-container">
           <div class="main-nav__logo-wrapper">
-            <a class="main-nav__logo" href="index.html">
+            <a class="main-nav__logo" href="index.html" aria-label="Перейти на главную страницу">
               <span class="visually-hidden">Логотип интернет-магазина «Кэт энерджи»</span>
-              <svg class="main-nav__logo-icon" width="191" height="38">
+              <svg class="main-nav__logo-icon" width="191" height="38" aria-hidden="true" focusable="false">
                 <use xlink:href="./img/sprite.svg#icon-logo-mobile"></use>
               </svg>
-              <svg class="main-nav__logo-icon-full" width="174" height="52">
+              <svg class="main-nav__logo-icon-full" width="174" height="52" aria-hidden="true" focusable="false">
                 <use xlink:href="./img/sprite.svg#icon-logo-tablet"></use>
               </svg>
-              <svg class="main-nav__logo-icon-flash" width="202" height="59">
+              <svg class="main-nav__logo-icon-flash" width="202" height="59" aria-hidden="true" focusable="false">
                 <use xlink:href="./img/sprite.svg#icon-logo-desktop"></use>
               </svg>
             </a>
-            <button class="main-nav__toggle" type="button">
-              <span class="visually-hidden">Открыть меню</span>
-              <svg class="main-nav__toggle-icon main-nav__toggle-icon--js" width="24" height="18">
+            <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
+              <svg class="main-nav__toggle-icon main-nav__toggle-icon--js" width="24" height="18" aria-hidden="true"
+                focusable="false">
                 <use xlink:href="./img/sprite.svg#icon-toggle"></use>
               </svg>
-              <svg class="main-nav__toggle-close-icon main-nav__toggle-close-icon--js-open" width="20" height="20">
+            </button>
+            <button class="main-nav__toggle" type="button" aria-label="Закрыть меню">
+              <svg class="main-nav__toggle-close-icon main-nav__toggle-close-icon--js-open" width="20" height="20"
+                aria-hidden="true" focusable="false">
                 <use xlink:href="./img/sprite.svg#icon-toggle-close"></use>
               </svg>
             </button>
           </div>
         </div>
         <ul class="main-nav__list site-list site-list--js site-list--js-open">
-          <li class="site-list__item">
-            <a class="site-list__item-link" href="index.html">Главная</a>
+          <li class="site-list__item site-list__item--index">
+            <a class="site-list__item-link" href="index.html" aria-label="Перейти на главную страницу">Главная</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__item-link" href="catalog.html">Каталог продукции</a>
+          <li class="site-list__item site-list__item--catalog">
+            <a class="site-list__item-link" href="catalog.html"
+              aria-label="Перейти на страницу каталога продукции">Каталог продукции</a>
           </li>
-          <li class="site-list__item site-list__item--current">
-            <a class="site-list__item-link">Подбор программы</a>
+          <li class="site-list__item site-list__item--form site-list__item--current">
+            <a class="site-list__item-link site-list__item-link--current">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -67,114 +72,117 @@
           программу питания для вашего кота</p>
         <form class="program__form" action="https://echo.htmlacademy.ru/" method="get">
           <div class="program__top-wrapper">
-            <fieldset class="program__fieldset">
+            <fieldset class="program__fieldset program__fieldset--top">
               <label class="program__label">
                 <span class="program__text">Имя:*</span>
-                <input class="program__input program__input--name" type="text" name="name" value="Барсик" required>
+                <input class="program__input program__input--name" type="text" name="name" value="Барсик" required
+                  aria-label="Введите имя вашего кота">
               </label>
               <label class="program__label">
                 <span class="program__text">Вес (кг):*</span>
-                <input class="program__input program__input--weight" type="number" name="weight" value="7" required>
+                <input class="program__input program__input--weight" type="number" name="weight" value="7" required
+                  aria-label="Введите вес вашего кота в килограммах">
               </label>
               <label class="program__label">
                 <span class="program__text">Возраст (лет):</span>
-                <input class="program__input program__input--age" type="number" name="age" value="7">
+                <input class="program__input program__input--age" type="number" name="age" value="7"
+                  aria-label="Введите количество полных лет вашего кота">
               </label>
             </fieldset>
             <div class="program__radiobuttons-wrapper">
               <fieldset class="program__fieldset program__fieldset--choice">
                 <label class="program__label program__label--choice">
-                  <input class="visually-hidden control-input" type="radio" name="program" value="slim" checked>
+                  <input class="visually-hidden control-input" type="radio" name="program" value="slim" checked
+                    aria-label="Выбрать программу для похудения">
                   <span class="program__radiobutton"></span>
                   <span class="program__text program__text--choice">Похудение</span>
                 </label>
                 <label class="program__label program__label--choice">
-                  <input class="visually-hidden control-input " type="radio" name="program" value="pro">
+                  <input class="visually-hidden control-input " type="radio" name="program" value="pro"
+                    aria-label="Выбрать программу для набора массы">
                   <span class="program__radiobutton"></span>
                   <span class="program__text program__text--choice">Набор массы</span>
                 </label>
                 <label class="program__label program__label--choice">
-                  <input class="visually-hidden control-input" type="radio" name="program" value="advice">
+                  <input class="visually-hidden control-input" type="radio" name="program" value="advice"
+                    aria-label="Попросить совета">
                   <span class="program__radiobutton"></span>
                   <span class="program__text program__text--choice">Не знаю (Нужен ваш совет)</span>
                 </label>
               </fieldset>
             </div>
           </div>
-          <div class="program__title-container">
-            <div class="program__title-wrapper"></div>
+          <div class="program__title-line"></div>
+          <div class="program__fieldset-wrapper">
+            <h3 class="program__title">Контактные данные <br class="program__title-br">
+              (владельца кота)</h3>
+            <fieldset class="program__fieldset program__fieldset--contacts">
+              <div class="program__contacts-fieldset-wrapper">
+                <label class="program__label">
+                  <span class="program__text program__text--email">E-mail:*</span>
+                  <input class="program__input program__input--email" type="email" name="email"
+                    value="kuklachev@gmail.com" required aria-label="Введите ваш e-mail">
+                  <svg class="program__icon program__icon--email" width="19" height="14" aria-hidden="true"
+                    focusable="false">
+                    <use xlink:href="./img/sprite.svg#icon-email"></use>
+                  </svg>
+                </label>
+                <label class="program__label">
+                  <span class="program__text">Телефон:*</span>
+                  <input class="program__input program__input--phone" type="tel" name="phone" value="8 (960) 900-60-90"
+                    required aria-label="Введите ваш номер телефона">
+                  <svg class="program__icon program__icon--phone" width="20" height="21" aria-hidden="true"
+                    focusable="false">
+                    <use xlink:href="./img/sprite.svg#icon-phone"></use>
+                  </svg>
+                </label>
+              </div>
+            </fieldset>
           </div>
-          <div class="program__title-container-left">
-            <div class="program__title-wrapper-left"></div>
-          </div>
-            <h3 class="program__title">Контактные данные (владельца кота)</h3>
-          <fieldset class="program__fieldset program__fieldset--contacts">
-            <div class="program__contacts-wrapper">
-              <label class="program__label">
-                <span class="program__text">E-mail:*</span>
-                <input class="program__input program__input--email" type="email" name="email"
-                  value="kuklachev@gmail.com" required>
-                <svg class="program__icon program__icon--email" width="19" height="14">
-                  <use xlink:href="./img/sprite.svg#icon-email"></use>
-                </svg>
-              </label>
-              <label class="program__label">
-                <span class="program__text">Телефон:*</span>
-                <input class="program__input program__input--phone" type="tel" name="phone" value="8 (960) 900-60-90"
-                  required>
-                <svg class="program__icon program__icon--phone" width="20" height="21">
-                  <use xlink:href="./img/sprite.svg#icon-phone"></use>
-                </svg>
-              </label>
-            </div>
-          </fieldset>
-          <div class="program__title-container program__title-container--textarea">
-            <div class="program__title-wrapper program__title-wrapper--textarea"></div>
-          </div>
-          <div class="program__title-container-left program__title-container-left--textarea">
-            <div class="program__title-wrapper-left program__title-wrapper-left--textarea"></div>
-          </div>
-            <h3 class="program__title program__title--textarea">Комментарий</h3>
-          <fieldset class="program__fieldset">
+          <div class="program__title-line program__title-line--comment"></div>
+          <div class="program__fieldset-wrapper">
+          <h3 class="program__title program__title--textarea">Комментарий</h3>
+          <fieldset class="program__fieldset program__fieldset--textarea">
             <label class="program__label">
-              <textarea class="program__textarea" name="comment"
-                placeholder="Расскажите обо всех повадках кота"></textarea>
+              <textarea class="program__textarea" name="comment" placeholder="Расскажите обо всех повадках кота"
+                aria-label="Введите ваш комментарий"></textarea>
             </label>
           </fieldset>
-          <div class="program__title-container program__title-container--checkbox">
-            <div class="program__title-wrapper program__title-wrapper--checkbox"></div>
           </div>
-          <div class="program__title-container-left program__title-container-left--checkbox">
-            <div class="program__title-wrapper-left program__title-wrapper-left--checkbox"></div>
-          </div>
+          <div class="program__title-line program__title-line--additionally"></div>
+          <div class="program__fieldset-wrapper">
           <h3 class="program__title program__title--checkbox">Дополнительно</h3>
           <fieldset class="program__fieldset program__fieldset--choice">
             <div class="program__checkbox-wrapper">
               <label class="program__label program__label--choice ">
                 <input class="visually-hidden control-input" type="checkbox" name="additionally" value="sweetener"
-                  checked>
+                  checked aria-label="Добавить сахарозаменитель">
                 <span class="program__checkbox"></span>
                 <span class="program__text program__text--choice">Сахарозаменитель</span>
               </label>
               <label class="program__label program__label--choice">
-                <input class="visually-hidden control-input" type="checkbox" name="additionally" value="water">
+                <input class="visually-hidden control-input" type="checkbox" name="additionally" value="water"
+                  aria-label="Добавить питьевую воду">
                 <span class="program__checkbox"></span>
                 <span class="program__text program__text--choice">Питьевая вода</span>
               </label>
               <label class="program__label program__label--choice">
-                <input class="visually-hidden control-input" type="checkbox" name="additionally" value="milk">
+                <input class="visually-hidden control-input" type="checkbox" name="additionally" value="milk"
+                  aria-label="Добавить молоко">
                 <span class="program__checkbox"></span>
                 <span class="program__text program__text--choice">Молоко</span>
               </label>
               <label class="program__label program__label--choice">
-                <input class="visually-hidden control-input" type="checkbox" name="additionally" value="vitamins">
+                <input class="visually-hidden control-input" type="checkbox" name="additionally" value="vitamins"
+                  aria-label="Добавить витамины">
                 <span class="program__checkbox"></span>
                 <span class="program__text program__text--choice">Витамины</span>
               </label>
             </div>
           </fieldset>
+          </div>
           <div class="program__form-button-wrapper">
-            <button class="program__button" type="submit">Отправить заявку</button>
+            <button class="program__button" type="submit" aria-label="Кнопка отправки заявки">Отправить заявку</button>
             <span class="program__asterisk">* — Обязательные поля</span>
           </div>
         </form>
@@ -204,7 +212,7 @@
   <footer class="main-footer">
     <div class="main-footer__wrapper">
       <div class="main-footer__tablet">
-        <a class="main-footer__logo" href="index.html">
+        <a class="main-footer__logo" href="index.html" aria-label="Перейти на главную страницу">
           <span class="visually-hidden">Логотип интернет-магазина «Кэт энерджи»</span>
           <svg class="main-footer__logo-icon" width="128" height="24">
             <use xlink:href="./img/sprite.svg#icon-logo"></use>
@@ -213,25 +221,28 @@
         <div class="main-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" target="_blank"
+                aria-label="Открыть страницу HTML Academy в Вконтакте">
                 <span class="visually-hidden">Мы в Вконтакте</span>
-                <svg class="social__icon" width="28" height="22">
+                <svg class="social__icon" width="27" height="17" aria-hidden="true" focusable="false">
                   <use xlink:href="./img/sprite.svg#icon-vkontakte"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"
+                target="_blank" aria-label="Открыть страницу HTML Academy в Ютубе">
                 <span class="visually-hidden">Мы в Ютубе</span>
-                <svg class="social__icon" width="28" height="22">
+                <svg class="social__icon" width="24" height="19" aria-hidden="true" focusable="false">
                   <use xlink:href="./img/sprite.svg#icon-youtube"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" target="_blank"
+                aria-label="Открыть страницу HTML Academy в Телеграме">
                 <span class="visually-hidden">Мы в Телеграме</span>
-                <svg class="social__icon" width="28" height="22">
+                <svg class="social__icon" width="19" height="17" aria-hidden="true" focusable="false">
                   <use xlink:href="./img/sprite.svg#icon-telegram"></use>
                 </svg>
               </a>
@@ -239,8 +250,9 @@
           </ul>
         </div>
         <div class="main-footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
-            <svg class="copyright__icon" width="27" height="34">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank"
+            aria-label="Открыть сайт HTML Academy">HTML Academy
+            <svg class="copyright__icon" width="27" height="34" aria-hidden="true" focusable="false">
               <use xlink:href="./img/sprite.svg#icon-copyright"></use>
             </svg>
           </a>
